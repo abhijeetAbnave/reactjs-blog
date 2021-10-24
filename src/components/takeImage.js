@@ -12,8 +12,8 @@ import imageCompression from 'browser-image-compression';
 const configS3 = {
   bucketName: "summarizer-abhijeet",
   region: "ap-south-1",
-  accessKeyId: "AKIA6LHZT3DEOGOJ6ONR",
-  secretAccessKey: "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",
+  accessKeyId: "AKIA6LH",
+  secretAccessKey: "HXiO3NfsCABQ",
 };
 
 const config = {
