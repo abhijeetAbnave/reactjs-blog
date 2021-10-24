@@ -1,0 +1,1024 @@
+.btn-basic {
+  height: 40px;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: $border-radius;
+  font-family: $secondary-text-medium;
+
+  .btn-basic:hover {
+    border: none;
+    outline: none !important;
+  }
+
+  .btn-basic:focus {
+    border: none;
+    outline: 0px auto -webkit-focus-ring-color !important;
+  }
+}
+
+
+.btn-rounded {
+  height: 40px;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius:100px;
+  cursor: pointer;
+  font-family:$secondary-text-medium;   
+
+  .btn-basic:hover {
+    border: none;
+    outline: none !important;
+  }
+
+  .btn-basic:focus {
+    border: none;
+    outline: 0px auto -webkit-focus-ring-color !important;
+  }
+}
+
+
+
+
+.button-small-basic-pri {
+  background-color:$sec-brand;
+  font-family:$secondary-text-bold;
+  font-size: 12px;
+  line-height:12px;
+  border-radius:5px;
+  border: 1px solid transparent;
+  padding: 10px;
+  min-width: 60px;
+  box-shadow: none;  
+  color: #fff;
+  height:32px;
+  &:hover {
+    background-color: darken($sec-brand, 10%);
+    border: 1px solid transparent;
+  }
+ 
+  &:focus {
+    background-color: darken($sec-brand, 10%);
+    border: 1px solid darken($sec-brand, 30%);
+  }
+
+  &:active,&:visited {
+    background-color: $sec-brand;
+    border: 1px solid transparent;
+  }
+
+}
+
+.button-small-basic-sec {
+  background-color:#fff!important;
+  font-family:$secondary-text-bold;
+  font-size: 12px;
+  line-height:12px;
+  border-radius:5px;
+  border: 1px solid $lightgrey;
+  padding: 10px;
+  min-width: 60px;
+  box-shadow: none;  
+  color:#000;
+  height:32px;
+  &:hover {
+     background-color:#fff;
+     border: 1px solid $grey;
+  }
+  &:active,
+  &:focus {
+    background-color: darken($lightgrey, 10%);
+    border: 1px solid $grey;
+  }
+
+  &:visited {
+    background-color: #fff;
+    border: 1px solid $grey;
+  }
+
+}
+
+
+.button-med-basic-sec {
+  background-color:#fff!important;
+  font-family:$secondary-text-bold;
+  font-size: 12px;
+  line-height:12px;
+  border-radius:5px;
+  border: 1px solid $lightgrey;
+  padding: 10px;
+  min-width:55px;
+  max-width: auto;
+  padding:0px 10px;
+  box-shadow: none;  
+  color:#000;
+  height:45px;
+  &:hover {
+     background-color:#fff;
+     border: 1px solid $grey;
+  }
+  &:active,
+  &:focus {
+    background-color: darken($lightgrey, 10%);
+    border: 1px solid $grey;
+  }
+
+  &:visited {
+    background-color: #fff;
+    border: 1px solid $grey;
+  }
+
+}
+
+.btn-secondary {  border:none;
+  height: 40px;
+  font-family:$secondary-text-medium;
+  font-size: 14px;
+    line-height: 25px;
+  border-radius: 100px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color:$sec-brand!important;
+  border:none;
+  height: 40px;
+  font-size: 14px;
+  line-height: 25px;
+  border-radius:100px;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $sec-brand!important;
+  border-color: none;
+}
+
+
+.btn-outline-none {
+  height: 40px;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: $border-radius;
+  font-family: $secondary-text-medium;
+  border: none!important;
+
+  .btn-basic:hover {
+    border: none;
+    outline: none !important;
+  }
+
+  .btn-basic:focus {
+    border: none;
+    outline: 0px auto -webkit-focus-ring-color !important;
+  }
+}
+
+
+// button,button:active,
+// button:focus
+//  {
+//   box-shadow: none;
+//   border-width: 1px;
+//   border-color: $pri-brand;
+//   outline: none !important;
+//   font-weight: normal;
+//   background-color: $pri-brand;
+ 
+//   & button:hover
+//   {
+//     background-color: $pri-button-bg;
+//   }
+// }
+
+
+
+
+/*----------lesson-subject buttons-----*/
+
+
+.lesson-button-bio {
+  background-color: $color-bio;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+  font-family:$secondary-text-medium;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  height: 45px;
+
+  &:hover {
+    background-color: darken($color-bio, 10%);
+    border:none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: $color-bio;
+  }
+
+}
+
+.lesson-button-maths {
+  background-color: $color-maths;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+
+  font-family: $primary-title-text;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  height: 45px;
+
+  &:hover {
+    background-color: darken($color-maths, 10%);
+    border:none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: darken($color-maths, 10%);
+  }
+
+}
+
+
+.lesson-button-unlock {
+  background-color: $lightgrey;
+  color:$grey;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+  font-family: $primary-title-text;
+  font-size: 16px;
+  line-height: 16px;  
+  height: 45px;
+  &:hover {
+    background-color: darken($color-maths, 10%);
+    border:none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: darken($color-maths, 10%);
+  }
+
+}
+
+.lesson-button-chemistry {
+  background-color: $color-chem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+
+  font-family: $primary-title-text;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  height: 45px;
+
+  &:hover {
+    background-color: darken($color-chem, 10%);
+    border:none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: darken($color-chem, 10%);
+  }
+
+}
+
+
+.lesson-button-physics {
+  background-color: $color-physics;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  // padding: 10px;
+  width: 100%;
+  box-shadow: none;
+
+  font-family: $primary-title-text;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  height: 45px;
+
+  &:hover {
+    background-color: darken($color-physics, 10%);
+    border:none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: $color-physics;
+  }
+
+}
+
+
+.lesson-button-default {
+  background-color: $pri-button-bg;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+  font-family:$secondary-text-medium;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  font-weight:600;
+  height: 40px;
+
+  &:hover {
+    background-color: darken( $pri-button-bg, 10%);
+    border: 1px solid transparent;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $pri-button-bg
+  }
+
+  &:visited {
+    background-color: $pri-button-bg;
+  }
+
+}
+
+/*------------- subject button end-------*/
+
+/*-----video sec nav buttons-----*/
+.lessons-nav-button {
+  background-color: $sec-brand;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size: 14px;
+    line-height: 14px;
+  color: $white;
+  height: 35px;
+  min-width:50px;
+}
+
+.lessons-nav-button-disabled {
+  background-color: transparent;
+  opacity: 0.4;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  height: 35px;
+  cursor: none;
+  border: 1px solid #fff;
+  opacity: 0.2;
+  min-width:50px;
+
+  &:hover {
+    border: 1px solid #fff !important;
+    opacity: 0.2;
+  }
+
+  &:active {
+    border: 1px solid #fff !important;
+    opacity: 0.2;
+  }
+
+  &:visited {
+    border: 1px solid #fff;
+    opacity: 0.4;
+  }
+}
+
+.lessons-nav-button-circle {
+  cursor:pointer;
+  background-color: $sec-brand;
+  border-radius: 50px;
+  padding: 0px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  font-family:$secondary-text-medium;
+  font-size: 18px;
+  color: #fff;
+  height: 35px;
+  width:35px;
+  margin: 0px 10px;
+  text-align: center;
+  line-height: 35px;
+
+  &:hover {
+    border: 1px solid #fff !important;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border: 1px solid #fff !important;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: 1px solid #fff;
+    opacity: 0.4;
+  }
+}
+
+/*-----video sec nav buttons end -----*/
+
+
+/*----modal-popup button---*/
+
+.modal-button {
+  background-color: $sec-brand;
+  border-radius: $border-radius;
+  padding:5px  20px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size:14px;
+  line-height: 25px;
+  color: #fff;
+  height: 35px;
+  &:hover {
+    //background-color: darken( $sec-brand, 10%);
+    background-color: $sec-brand;
+    color:#fff;
+  }
+
+  &:active,
+  &:focus {
+    //background-color: $orange;
+    background-color: $sec-brand;
+    color:#fff;
+  }
+
+  &:visited {
+    //background-color: $sec-brand;
+    background-color: $sec-brand;
+    color:#fff;
+  }
+}
+
+
+.modal-button-sec{
+  background-color: $pri-brand;
+  border-radius: $border-radius;
+  padding:5px  20px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size:14px;
+  line-height: 25px;
+  color: #fff;
+  height: 35px;
+  &:hover {
+    background-color: darken( $sec-brand, 10%);
+   
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: $sec-brand;
+  }
+}
+
+
+.modal-button-secondary {
+  background-color: $pri-brand;
+  border-radius: $border-radius;
+  padding:5px  20px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size:14px;
+  line-height: 25px;
+  color: #fff;
+  height: 35px;
+  &:hover {
+    background-color: darken( $sec-brand, 10%);
+   
+  }
+
+  &:active,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:visited {
+    background-color: $sec-brand;
+  }
+}
+
+
+
+.modal-button-primary {
+  background-color: $pri-button-bg;
+  border-radius: $border-radius;
+  padding:5px  20px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size:14px;
+  line-height: 25px;
+  color: #fff;
+  height: 35px;
+  &:hover {
+    background-color: darken( $pri-button-bg, 10%);   
+  }
+
+  &:active,
+  &:focus {
+    background-color: $pri-button-bg;
+  }
+
+  &:visited {
+    background-color: $pri-button-bg;
+  }
+}
+
+
+
+
+.modal-button-grey {
+  background-color: $grey;
+  border-radius: $border-radius;
+  padding:5px  20px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family:$secondary-text-medium;
+  font-size:14px;
+  line-height: 25px;
+  color: $lightgrey;
+  height: 35px;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:hover {
+    border:none;
+    overflow: 0.9;
+  
+  }
+
+  &:active {
+    border:none;
+   
+  }
+
+  &:visited {
+    border: none;
+   
+  }
+}
+
+
+.button-small {
+  padding: 0;
+  background-color:$pri-brand;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 100px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family:$secondary-text-medium;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+.button-small-success {
+  padding: 0;
+  background-color:$green;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 100px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family:$secondary-text-medium;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+.spinner-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:$sec-brand;
+  font-family:$secondary-text-bold;
+  font-size: 12px;
+  line-height:12px;
+  border-radius:5px;
+  border: 1px solid transparent;
+  padding: 10px;
+  min-width: 60px;
+  box-shadow: none;  
+  color: #fff;
+  height:32px;
+}
+
+.spinner-small-orange {
+  width:100%;
+  height: 20px;
+  color:#fff;
+  background-color:$sec-brand;
+}
+
+
+.button-small-orange {
+  background-color:$sec-brand;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 90px;
+  padding: 10px;
+  height: 30px;
+  color: #fff;
+  line-height: 11px;
+  font-size:12px;
+  font-family:$secondary-text-medium;
+
+  &:hover {
+    border:none;    
+    background-color:darken($sec-brand, 10%)
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+.button-small-grey {
+  padding: 0;
+  background-color:$lightgrey;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 90px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family:$secondary-text-medium;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+.button-small-green {
+  padding: 0;
+  background-color:$sec-brand;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 90px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family:$secondary-text-medium;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+.button-small-grey {
+  padding: 0;
+  background-color:$lightgrey;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 90px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family:$secondary-text-medium;
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+.button-small-circle {
+  padding: 0;
+  background-color:$lightgrey;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 13px;
+  font-size:12px;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+.button-item-flex {
+  min-width: 100px;
+  padding:5px ;
+  font-size:20px;
+  margin:5px;
+}
+
+
+.button-big {
+  padding: 0;
+  background-color:$orange;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 100px;
+  width: auto;
+  padding:0px 20px;
+  height: 55px;
+  color: #fff;
+  line-height: 20px;
+  font-size:20px;
+  font-family:$secondary-text-medium;
+}
+
+/*-------------forquiz------*/
+
+.button-small-quiz {
+  padding: 0;
+  background-color:$quiz-sec;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 14px;
+  font-size:14px;
+  font-family: $quiz-sec-font;
+
+  &:hover {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    border:none;
+    opacity: 0.4;
+  }
+
+  &:visited {
+    border: none;
+    opacity: 0.4;
+  }
+}
+
+
+.rouded-white-quiz {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: auto;
+  box-shadow: none;
+  border: none;
+  font-family: $quiz-sec-font;
+  color:$quiz-sec;
+  font-size: 14px;
+  line-height: 18px;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  min-width:50px;
+
+  &:hover {
+    border: 1px solid #fff !important;   
+    background-color: #fff;
+  }
+  &:active {
+    border: 1px solid #fff !important;    
+    background-color: #fff;
+  }
+  &:visited {
+    border: 1px solid #fff;
+    background-color: #fff;
+   
+  }
+}
+.lessons-video-suggest-btn {
+  color: #fff;
+  height: 45px !important;
+  width:155px !important;
+  line-height: 41px !important;
+}
+
+/*--- added for calendar buttons for event---*/
+@mixin button-bg($bg) {
+  background: $bg;
+  border:none;
+  color:#fff;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+.btn-cal {
+  height: 40px;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: $border-radius;
+  font-family: $secondary-text-medium; 
+  padding:0px 10px;
+  border:none;
+  box-shadow: none;
+  outline:none;
+}
+
+.btn-join {
+   @include button-bg(#17bd59);
+}
+
+.btn-blue {
+   @include button-bg(#3396be);
+}
+
+.btn-disable {
+   @include button-bg(#adb5bd);
+   color:#7a7f9a;
+   cursor: not-allowed;
+}
+
+.btn-danger {
+   @include button-bg(#e74c3c);
+}

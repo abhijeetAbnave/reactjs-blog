@@ -1,0 +1,154 @@
+// * {
+//   -webkit-font-smoothing: antialiased !important;
+//   text-rendering: optimizeLegibility !important;
+//   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+//   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+// }
+
+// * {
+//   font-family: $secondary-text;
+// }
+
+// body {
+//   background-color: $page-bg;
+//   font-family: $secondary-text;
+//   color:#000;
+// }
+
+.text-orange { color: $orange}
+.text-yellow { color: $yellow}
+
+
+
+.text-red {color: $color-maths}
+.text-green { color:$color-bio}
+.text-bold { font-family: $secondary-text-bold; font-weight: 600;}
+.text-normal{ font-family: $secondary-text;}
+.text-semibold {font-family: $secondary-text-medium;}
+.text-pri { font-family: $primary-title-text;}
+.text-med { font-size: 18px;}
+
+.text-icon{ font-size:15px;}
+
+.text-icon-big { font-size:35px;}
+
+
+
+
+
+.w100 {
+  font-weight: 100;
+}
+
+.w200 {
+  font-weight: 200;
+}
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w600 {
+  font-weight: 600;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.title {
+  font-family: $primary-title-text;
+  font-size: 22px;
+ // color:$cardtitlecolor;
+ //text-align: center;
+ // width:100%;
+}
+
+.help-page-icon { font-size: 50px; line-height: 40px;}
+
+
+.whitelink, .text-white {
+  color: #fff;
+  font-weight: normal;
+  cursor: pointer;
+  &:hover {
+    color: $hover;
+    text-decoration:none;
+  }
+  &:active { 
+    color: $active;    
+  }
+  &:focus { 
+    color: $focus;    
+  }
+ 
+  &:visited { 
+    color: #fff;    
+  } 
+ 
+}
+
+.whitelink-hidedeskop{
+  color:$pri-brand!important;
+}
+
+
+
+
+.normal-link {
+  color:#000;
+  font-weight: 600px;
+  cursor: pointer;
+  &:hover {
+    color: $hover;
+    text-decoration:none;
+  }
+  &:active { 
+    color: $active;    
+  }
+  &:focus { 
+    color: $focus;    
+  }
+ 
+  &:visited { 
+    color: #000;    
+  } 
+ 
+}
+
+
+.alert-error {
+  color:$alert;
+}
+.text-normal {
+  font-family:$secondary-text;
+  font-size: 12px;
+  color:#000;
+}
+.text-med {
+  font-family:$secondary-text;
+  font-size: 14px;
+  color:#000;
+}
+.text-large {
+  font-family:$secondary-text;
+  font-size: 30px;
+  color:#000;
+}
+
+/*----for-quiz-----*/
+
+.bg-green {background-color:$color-bio}
+.bg-red {background-color:$color-maths}
+.bg-neutral { background-color: $quiz-sec;}
+
+
+
+
+
+
+

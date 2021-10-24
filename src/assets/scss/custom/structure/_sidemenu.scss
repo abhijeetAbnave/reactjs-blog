@@ -1,0 +1,153 @@
+// 
+// Sidemenu
+// 
+
+
+
+.side-menu {
+    min-width: 75px;
+    max-width: 75px;
+    height: 100vh;
+    min-height: 555px;
+    background-color: $sidebar-bg;
+    display: flex;
+    z-index: 9;
+    box-shadow: 0 2px 4px rgba(15, 34, 58, .12);
+    z-index: 2000;
+
+
+    @media (max-width: 991.98px) {
+        position: fixed;
+        bottom: 0;
+        height: 52px;
+        min-width: 100%;
+        min-height: auto;
+        display: block;
+
+        // border-top: 1px solid $border-color;
+        .mid-sidenav-content {
+            display: block !important;
+            height: 52px;
+            overflow: visible;
+        }
+    }
+
+    .navbar-brand-box {
+        text-align: center;
+
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+
+        .logo {
+            line-height: 70px;
+            padding: 0;
+        }
+
+        .logo-dark {
+            display: $display-block;
+        }
+
+        .logo-light {
+            display: $display-none;
+        }
+
+    }
+
+    .theme-mode-icon {
+        &:before {
+            content: $theme-mode-icon;
+        }
+    }
+}
+
+.side-menu-nav {
+
+    .nav-item {
+        margin: 4px;
+
+        @media (max-width: 991.98px) {
+            flex-basis: 0;
+            flex-grow: 1;
+            margin: 2px;
+        }
+
+        .nav-link {
+            text-align: center;
+            font-size: 22px;
+            color: $sidebar-menu-item-color;
+            width: 66px;
+            height: 46px;
+            margin: 0px auto;
+            border-radius: 8px;
+            padding: 0;
+
+
+            @media (max-width: 991.98px) {
+                font-size: 20px;
+                width: auto;
+                height: 48px;
+                line-height: 35px;
+            }
+
+            &.active {
+
+                background-color: $sidebar-menu-item-active-bg;
+                color: $white !important;
+
+            }
+
+            .nav-Text {
+                font-size: 11px;
+                line-height: 0px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-weight: $font-weight-light;
+            }
+
+            .span {
+                text-align: center;
+            }
+        }
+
+        &.show>.nav-link {
+            background-color: $sidebar-menu-item-active-bg;
+            color: $primary;
+        }
+    }
+
+    .profile-user {
+        height: 36px;
+        width: 36px;
+        background-color: $gray-300;
+        padding: 3px;
+    }
+}
+
+.i-f-height {
+    height: 100Vh;
+
+    @media (max-width: 575.98px) {
+        height: calc(100vh - 61px) !important;
+
+
+    }
+}
+
+.navbar-brand-box {
+    height: 72px
+}
+
+.mid-sidenav-content {
+    overflow-y: auto;
+    min-height: calc(100vh - 144px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-profile-box {
+    height: 72px
+}

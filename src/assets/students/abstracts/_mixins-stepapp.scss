@@ -1,0 +1,65 @@
+@mixin body-font {
+   font-family: $secondary-text;
+}
+
+@mixin links ($link, $visited, $hover, $active) {
+  & {
+      color: $link;
+      &:visited {
+          color: $visited;
+      }
+      &:hover {
+          color: $hover;
+          text-decoration: none;
+      }
+      &:active, &:focus {
+          color: $active;
+      }
+      cursor: pointer;
+  }
+}
+
+
+
+button:focus {
+outline: none;
+outline: 0 !important;
+//border: 0 !important;
+box-shadow: none !important;
+outline: 0px auto -webkit-focus-ring-color !important;
+}
+
+
+@mixin multiLineEllipsis($lineHeight:20px, $lineCount: 1, $ebgColor: transparent){
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount; 
+    text-align: left;
+    margin-right: -1em;
+    padding-right: 3em;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      margin-top: 0.2em;
+      background: $ebgColor;
+    }
+  }
+
+  .border-radius-round {
+    border-radius: 5px!important;
+  }
+
+  .border-radius-pill {
+    border-radius: 50px!important;
+  }
+
+
+
+
+
+

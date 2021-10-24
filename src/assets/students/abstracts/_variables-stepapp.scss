@@ -1,0 +1,313 @@
+/*------------ For my reference---------*/
+
+// $blog-main:#f16b24;$blog-bg: #1b1f5f; ---these are the learn.blogcolors for brand
+$blog-main:#648dff;
+$blog-bg: #43c6ac;
+$blog-bg-light: #F3F6F8;
+
+
+
+$epicon-bg: #5b103c;
+
+$bg-nav-blog: #43c6ac;
+$bg-nav-epicon: #5b103c;
+
+$footer-bg-epicon:#642613;
+$footerbg-blog: #11144a;
+
+/*------------for unified dark and light basic theme ---------*/
+
+$unified-bg-light:#F3F6F8;
+$light-theme-text:#181818;
+$light-theme-nav-bg: #43c6ac;
+$light-theme-nav-text:#F3F6F8;
+$light-theme-border-color:#caccce;
+$light-theme-contrast-color:#43c6ac;
+
+
+$unified-bg-dark: #43c6ac;
+$dark-theme-text:#F3F6F8;
+$dark-theme-nav-bg:#F3F6F8;
+$dark-theme-nav-text:#181818;
+$dark-theme-border-color:#5a62d2;
+$dark-theme-contrast-color:#F3F6F8;
+
+$card-textcolor:#181818;
+
+
+$unified-bg-quiz: #F57B76;
+$quiz-theme-nav-bg: #181818;
+$quiz-theme-text:#F3F6F8;
+$quiz-theme-nav-text:#F3F6F8;
+$quiz-theme-border-color:#caccce;
+
+/*----for unified dark and light basic theme----*/
+
+
+
+// $page-bg: #1b1f5f;
+$page-bg:#F3F6F8;
+$header-bg: #1b1f5f;
+$navbg-color:#3b3398;
+// $footer-bg:#11144a;
+$footer-bg:#fff;
+
+
+$link:#fff;
+$hover:#e4ac13;
+$active:#648dff;
+$visited:#e4ac13;
+$focus:#e4ac13;
+
+$cardtitlecolor:#648dff;
+
+// $pri-brand:#1b1f5f;
+ $pri-brand:#43c6ac;
+// $sec-brand:#f16b24;
+ $sec-brand: #648dff;
+$sec-color:#57add0;
+$grey:#6c757d;
+$lightgrey: #caccce;
+$offwhite: #e7e7e7;
+$softgrey:#f4f4f4;
+
+
+// students -button color for reference - fc8643
+$pri-button-bg: #648dff;
+$pri-button-bdr: rgba($pri-button-bg, 0.88);
+$sec-button-bg: #fff;
+$sec-button-bdr: rgba($grey, 0.88);
+$black:#000;
+$darkblue:#000449;
+$border-radius: 5px!default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$theme-colors: ("success": #17bd59, "info": #17a2b8, "warning": #ffc107, );
+
+$green:#17bd59;
+$success:#17bd59;
+$fail:#e96969;
+$default:#996fd6;
+// $secondary-text-bold:'SFPro-bold',sans-serif;
+// $secondary-text-semibold:'SFPro-SemiBold',sans-serif;
+// $secondary-text:'SFPro',sans-serif;
+$primary-title-text:'blog-primary';
+
+$secondary-text-bold:"blog-secondary-bold",sans-serif;
+$secondary-text-medium:"blog-secondary-medium",sans-serif;
+$secondary-text:"blog-secondary-regular",sans-serif;
+
+
+
+$primary-color: #2ba6cb;
+$orange:#648dff;
+$white:#fff; 
+$yellow: #e4ac13; 
+$blue:#13366D;
+$border-radius: 10px;
+$danger: #ED1C24;
+$footertext : rgba($white, 0.50);
+$footertextDark : #888888;
+
+
+
+
+
+$color-bio: #17bd59;
+$color-maths: #e96969;
+$color-chem: #3396be;
+$color-physics: #e4ac13;
+$color-english: #6f98a9;
+$color-cyber:#FE9F65;
+$color-cricket:#E98816;
+$color-economics:#a0be6b;
+$color-geography:#2eb2aa;
+$color-history:#977373;
+$color-political:#ca6dbc;;
+$color-default:#996fd6;
+$color-blue: #55b2ff;
+
+
+
+$red:#e96969;
+$green:#17bd59;
+$pink: #DE6262;
+$dark: #333741;
+$peach: #FCAC5E;
+
+
+
+$yellow: #F4D302;
+$blue: #3396be;
+
+/*---------general------------*/
+
+$alert: #721c24;
+
+/*--------------for quiz-----*/
+ $quiz-pri-color:#648dff;
+//   #F16B24;
+
+$quiz-app-bg:#000;
+$bg-quiz-gradient-one-top: #FCAC5E;
+$bg-quiz-gradient-one-bottom: #F57B76;
+$quiz-title-font:"quiz-title-font";
+$quiz-sec-font:"quiz-sec-font";
+$quiz-sec-font-reg:"quiz-sec-font-reg";
+
+$border-radius-quiz:5px;
+$quiz-ans-1:#57add0;
+$quiz-ans-2:#3168b9; 
+$quiz-ans-3:#a667f3;
+$quiz-ans-4: #8d1a7b;
+
+
+
+$quiz-sec:#A04610;
+
+$isdefault:#b47cf8;
+
+/*  for island themes*/
+$island-gradient-one-top:#5ee7df;
+$island-gradient-one-bottom: #fbc2eb;
+$theme1-pri: #7D486E;
+$theme1-sec: #AD6499;
+$theme1-text:#7D486E;
+
+
+
+$island-gradient-two-top:#E579B0;
+$island-gradient-two-bottom: #9075E7;
+$theme2-pri:#702677;
+$theme2-sec:#6856B0;
+$theme2-text:#702677;
+
+
+$island-gradient-three-top:#0FEADD;
+$island-gradient-three-bottom: #3198D1;
+$theme3-pri:#286BA0;
+$theme3-sec:#286BA0;
+$theme3-text:#045DAF;
+
+
+$island-gradient-maths-top:#E96969;
+$island-gradient-maths-bottom: #FE9F65;
+$ismaths:#a04040;
+$ismaths2: #c75b5b;
+$thememaths-text:#8b0e0e;
+
+
+$island-gradient-chemistry-top:#65C1F3;
+$island-gradient-chemistry-bottom: #0373B4;
+$ischemistry:#044F95;
+$ischemistry2:#0063BE;
+$themechemistry-text:#044F95;
+
+
+
+$island-gradient-physics-top:#D4CC14;
+$island-gradient-physics-bottom: #E98816;
+$isphysics:#BA7419;
+$isphysics2:#DE6D1B;
+$themephysics-text:#8b5712;
+
+$island-gradient-biology-top:#47BD76;
+$island-gradient-biology-bottom: #05C5B9;
+$isbiology:#0E8576;
+$isbiology2:#0B8E37;
+$themebiology-text:#07574D;
+
+
+$island-gradient-dark-top:#1B1F5F;
+$island-gradient-dark-bottom:#000;
+$theme5-pri: #E96969;
+$theme5-sec: #E96969;
+$theme5-text:#E96969;
+
+
+
+/************For Challenge Themes*****************/
+$challenge-gradient-one-top:#FCAC5E;
+$challenge-gradient-one-bottom: #F57B76;
+$challenge-theme1-pri:#e96969;
+$challenge-theme1-sec:#CF5151;
+
+$challenge-gradient-two-top:#E579B0;
+$challenge-gradient-two-bottom: #9075E7;
+$challenge-theme2-pri:#6856B0;
+$challenge-theme2-sec:#702677;
+
+$challenge-gradient-three-top:#47BD76;
+$challenge-gradient-three-bottom: #05C5B9;
+$challenge-theme3-pri:#0F9483;
+$challenge-theme3-sec:#0B8E37;
+
+$challenge-gradient-four-top:#4950b7;
+$challenge-gradient-four-bottom: #131313;
+$challenge-theme4-pri:#e96969;
+$challenge-theme4-sec:#CF5151;
+
+$border-radius-challenge:50px;
+
+/******************Chapter Background Theme*********************/
+.chemistry-chapter-bg{
+    background-image: linear-gradient(to bottom, #00a8ff, rgba(0, 145, 255, 0)) !important;
+}
+.maths-chapter-bg{
+    background-image:  linear-gradient(to bottom, #eb567d, rgba(235, 86, 125, 0)) !important;
+}
+.physics-chapter-bg{
+    background-image:linear-gradient(to bottom, #ffaa00, rgba(255, 204, 0, 0)) !important;
+}
+.biology-chapter-bg{
+    background-image: linear-gradient(to bottom, #19ba5d, rgba(20, 189, 90, 0)) !important;
+}
+.chemistry-chapter-top-bg{
+    background-color: #0ca7ff  !important;
+    z-index: 99;
+}
+.maths-chapter-top-bg{
+    background-color: #ec5383  !important;
+    z-index: 99;
+}
+.physics-chapter-top-bg{
+    background-color:#fdac0b  !important;
+    z-index: 99;
+}
+.biology-chapter-top-bg{
+    background-color:#1eb766  !important;
+    z-index: 99;
+}
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #f5f7fb;
+$gray-300: #f0eff5;
+$gray-400: #e6ebf5;
+$gray-500: #adb5bd;
+$gray-600: #7a7f9a;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$form-border:#1892bb;
+
+
+
+$logo-theme-light:url("../images/logo/logo-Icon-light.svg");
+
+$logo-theme-dark:url("../images/logo/logo-Icon-dark.svg");
+
+
+$loadinglogo-theme-light:url("../images/logo/logo-dark.svg");
+
+$loadinglogo-theme-dark:url("../images/logo/logo-light.svg");
+
+
+
+
+
+
+
+
+

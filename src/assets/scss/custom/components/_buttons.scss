@@ -1,0 +1,94 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+.btn {
+  border-radius:10px;
+  line-height: 0.5px!important;
+  border:1px solid $gray-500;
+  height: 35px;  
+}
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 10px  !important;;
+}
+
+.btn-dark, .btn-secondary {
+  color: $gray-200 !important;
+  border-radius:10px;
+  line-height: 0.5px!important;
+  border:1px solid $gray-500;
+  &:hover {
+    background-color: darken($gray-500, 10%);   
+    border-color: darken($gray-500, 10%);  
+  }
+  &:active,
+  &:focus {
+    background-color: darken($gray-500, 10%);}
+    border-color: darken($gray-500, 10%);  
+  &:visited {
+    background-color: darken($gray-500, 10%);
+    border-color: darken($gray-500, 10%);  
+  }
+}
+
+.btn-primary{
+  background-color:$sec-brand !important;
+  border-radius:10px;
+  line-height: 0.5px!important;
+  border:1px solid $sec-brand;
+  &:hover {
+    background-color: darken($sec-brand, 10%)!important;;   
+    border-color: darken($sec-brand, 10%)!important;;  
+  }
+  &:active,
+  &:focus {
+    background-color: darken($sec-brand, 10%)!important;;
+    border-color: darken($sec-brand, 10%)!important;;  
+  }
+  &:visited {
+    background-color: darken($sec-brand, 10%)!important;;
+    border-color: darken($sec-brand, 10%)!important;;  
+  }
+}
+
+.btn-outline-light{
+  background-color:transparent !important;
+  border-radius:10px;
+  line-height: 0.5px!important;
+  border:1px solid $gray-200;
+  &:hover {
+    background-color: darken($gray-200, 10%);   
+  }
+  &:active,
+  &:focus {
+    background-color: darken($gray-200, 10%);
+  }
+  &:visited {
+    background-color: darken($gray-200, 10%);
+  }
+}
+.btn-default {
+  background-color:transparent!important;
+  border-radius:0px;
+  line-height: 25px!important;
+  border:1px solid $gray-200;
+  min-width: 100px;
+  width:auto;
+  padding: 0px 10px;
+  height:35px;
+  &:hover {
+    border-color: darken($gray-200, 10%);   
+  }
+  &:active,
+  &:focus {
+    border-color: darken($gray-200, 10%);
+  }
+  &:visited {
+    border-color: darken($gray-200, 10%);
+  }
+}

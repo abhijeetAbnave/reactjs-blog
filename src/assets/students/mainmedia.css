@@ -1,0 +1,1392 @@
+/* CSS Document */
+/* ##Device = Desktops ##Screen = 1600px to higher resolution desktops */
+@media (min-width: 1600px) {
+  .loginCard {
+    /* background-color: #f4f4f4; */
+    border-radius: 50px;
+    padding: 20px;
+    margin: 0px;
+    min-height: 200px;
+    width: 600px;
+  }
+
+  /* .subject_item_flex {
+    width: 440px;
+  } */
+  /* .popularchapter_item_flex,.testimonials_item_flex {
+    min-height: 230px;
+    padding: 5px 0px 0px 0px;
+    background-color: #d5d9dd;
+    border-radius: 15px;
+    padding:0px;
+    margin: 20px 20px;
+    cursor: pointer;
+} */
+  #contentpages.token-login-bignav {
+    padding: 0px !important;
+  }
+}
+
+/* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .loginCard {
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 0px;
+    min-height: 150px;
+    width: 600px;
+  }
+
+  .onboarding-school {
+    width: 270px;
+    height: 100px;
+  }
+
+  .onboarding-mobile {
+    width: 270px;
+    height: 100px;
+  }
+
+  .onboarding-board {
+    width: 270px;
+    height: 100px;
+  }
+
+  .onboarding-language {
+    width: 270px;
+    height: 100px;
+  }
+
+  .quiz-top,
+  .island-revise {
+    width: 270px;
+    height: 100px;
+  }
+
+  .top-treasure-img,
+  .top-lock-img,
+  .top-wrong-answer-img,
+  .top-correct-answer-img {
+    position: absolute;
+    top: -77px;
+    left: 46%;
+  }
+
+  .shaka-video-container {
+    width: 100%;
+  }
+
+  .video-lesson-card {
+    height: 400px;
+  }
+  #contentpages.token-login-bignav {
+    padding: 0px !important;
+  }
+
+  .subject_item_flex {
+    width: 300px;
+  }
+}
+
+/*---------iPad-------------*/
+
+/* #Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loginCard {
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 0px;
+    min-height: 150px;
+    width: 600px;
+  }
+  /* .lessonCard{
+    margin-top: 50px;
+    margin-bottom: -20px;
+  } */
+  .close-wrapper {
+    top: 1% !important;
+    right: 19% !important;
+  }
+  .rail-infotitle {
+    font-size: 12px;
+  }
+  .theme-color .token-login-bignav {
+    top: 0px !important;
+  }
+  .navbar-responsive .navbar-nav {
+    flex-direction: row;
+  }
+  .subnavbar {
+    display: flex;
+  }
+  .onboarding-school {
+    width: 270px;
+    height: 100px;
+  }
+  .navbar-responsive {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    z-index: 99;
+  }
+  #MainNavbar {
+    transition: top 0.3s;
+    z-index: 99;
+  }
+  .footer-text {
+    display: none;
+  }
+  .main-page-bignav {
+    top: 45px !important;
+  }
+  .chapter-header-new {
+    top: 45px !important;
+  }
+
+  .onboarding-mobile {
+    width: 270px;
+    height: 100px;
+  }
+
+  .onboarding-board {
+    width: 270px;
+    height: 100px;
+  }
+
+  .onboarding-language {
+    width: 270px;
+    height: 100px;
+  }
+  .menu-scroll-vidnav-text {
+    max-height: 315px;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subject_item_flex {
+    width: 300px;
+  }
+  .question-card-stack {
+    margin-top: 30px;
+  }
+  .find-friend .circle-container p {
+    left: 22px;
+    top: 61px;
+  }
+  .find-friend .circle-container > *:nth-of-type(1) p {
+    left: 25px;
+    top: 64px;
+  }
+  .pos-bottom-clouds {
+    position: absolute;
+    bottom: -80px;
+  }
+}
+
+/*#Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px used for iphoneX landscape also */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .loginCard {
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 0px;
+    min-height: 150px;
+    width: 600px;
+  }
+  #quiz-bg {
+    top: 0px !important;
+    /* padding: 0px !important; */
+  }
+  .onboarding-school {
+    width: 250px;
+    height: 93px;
+  }
+
+  .onboarding-mobile {
+    width: 250px;
+    height: 93px;
+  }
+
+  .onboarding-board {
+    width: 250px;
+    height: 93px;
+  }
+
+  .onboarding-language {
+    width: 250px;
+    height: 93px;
+  }
+
+  .quiz-top,
+  .island-revise {
+    width: 250px;
+    height: 93px;
+  }
+  .subject_item_flex {
+    width: 300px;
+  }
+}
+
+/*---------iPad pro-------------*/
+
+/* Portrait used only for specific css for ipad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .loginCard {
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 0px;
+    min-height: 150px;
+    width: 800px;
+  }
+
+  .onboarding-school {
+    width: 250px;
+    height: 93px;
+  }
+
+  .onboarding-mobile {
+    width: 250px;
+    height: 93px;
+  }
+
+  .onboarding-board {
+    width: 250px;
+    height: 93px;
+  }
+  #contentpages.token-login-bignav {
+    padding: 0px !important;
+  }
+  .onboarding-language {
+    width: 250px;
+    height: 93px;
+  }
+  .quiz-top,
+  .island-revise {
+    width: 250px;
+    height: 93px;
+  }
+}
+
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape)##Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .quiz-top,
+  .island-revise {
+    width: 250px;
+    height: 93px;
+  }
+}
+
+/*---------iPad END-------------*/
+
+/*  ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .quiz-top,
+  .island-revise {
+    width: 250px;
+    height: 93px;
+  }
+  .quizCard {
+    width: 90vw !important;
+    height: 83vh;
+  }
+  .top-treasure-img,
+  .top-lock-img,
+  .top-wrong-answer-img,
+  .top-correct-answer-img {
+    position: absolute;
+    top: -78px;
+    left: 47 !important;
+  }
+  .quiz-item-flex-mcq {
+    width: 100%;
+    height: 50px !important;
+  }
+  .select-label-r {
+    width: 100%;
+    font-size: 18px !important;
+    line-height: 14px;
+    min-height: 60px !important;
+    height: auto !important;
+  }
+  .question-no-wrap {
+    position: absolute;
+    top: 60px;
+    width: auto;
+    left: 10px;
+  }
+
+  .select-theme-wrap {
+    display: block !important;
+  }
+
+  .quiz-header {
+    font-size: 22px;
+  }
+  .quiz-reports-flex-circle-::after {
+    display: none;
+  }
+  .whitelink-hidedeskop {
+    color: #fff !important;
+  }
+  .challenge-detail-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .video-Card {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .vid-card-vid {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .vid-card-info {
+    height: 40vh;
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+
+  .LeaderboardCard {
+    padding: 0px;
+  }
+
+  .leaderboard-item-flex-title {
+    margin: 0px;
+  }
+
+  .leaderboard-name {
+    font-size: 20px;
+  }
+
+  .leaderboard-class {
+    font-size: 16px;
+  }
+  .font-icon-tab {
+    display: none;
+  }
+
+  /* .content-leaderboard {
+    height: 36vh;
+  } */
+}
+
+/*--- iPhone 6, 7, & 8 in portrait For my ref-this query is dominant for all iPhones also android phones  pixel2 */
+
+@media (min-width: 300px) and (max-width: 640px) {
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+  .quiz-item-flex {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+  .quiz-item-flex .select-label {
+    height: auto;
+    font-size: 20px;
+  }
+  .quiz-quest {
+    font-size: 20px;
+  }
+  .right-count {
+    top: -15px;
+    right: 0px;
+    float: left !important;
+  }
+  .wrong-count {
+    top: -15px;
+    right: 0px;
+  }
+  .quiz-item-flex-mcq {
+    width: 100%;
+    height: 50px !important;
+    height: auto !important;
+  }
+  .select-label-r {
+    width: 100%;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    min-height: 60px !important;
+    height: auto !important;
+  }
+  .quiz-subject-card {
+    margin: 10px;
+    width: 150px !important;
+  }
+
+  .progress-info ul li {
+    list-style-type: none;
+    padding-top: 100px;
+  }
+  /* for island responsive */
+  .status-block {
+    width: 130px;
+    height: 130px;
+  }
+
+  .status-block-2 {
+    width: 130px;
+    height: 130px;
+  }
+  .status-block::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 9%;
+    bottom: 160%;
+    transform: translate(36%, 46%);
+  }
+
+  .status-block-2::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 9%;
+    bottom: 160%;
+    transform: translate(36%, 46%);
+  }
+
+  .intro-btn {
+    width: 180px;
+  }
+
+  .pos-timer {
+    position: absolute;
+    right: -5%;
+    width: 170px;
+    z-index: 2000;
+  }
+  .quiz-top {
+    height: 30px !important ;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .d-nav-mobile {
+    display: none !important;
+  }
+  #quiz-bg.quiz-select-subject {
+    max-height: 100vh;
+    overflow-y: auto;
+    top: 0px !important;
+  }
+  .practicequiz-card:last-child {
+    margin-bottom: 20px;
+  }
+
+  .close-wrapper {
+    right: 39% !important;
+    top: 1% !important;
+  }
+  .quiz-rail-match-friends {
+    display: none;
+  }
+
+  #right .icon {
+    bottom: 67px !important;
+  }
+  .navbar-brand img {
+    width: 62%;
+  }
+  /* #layout #right .content {
+  margin-top: 64px ;
+} */
+  #right .sidebar {
+    width: 100vw !important;
+  }
+  #ifrm {
+    height: 100vh !important;
+  }
+  .nav-text {
+    font-family: "blog-primary";
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+  }
+  .none-nav-page {
+    top: 0px !important;
+    padding-top: 50px !important;
+    max-height: calc(100vh - 0px) !important;
+  }
+  .navbar-responsive {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px;
+    z-index: 99;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 18px 15px;
+  }
+  .main-page-bignav {
+    top: 58px !important;
+  }
+
+  .token-login-quiz {
+    top: 0px !important;
+  }
+  .chat-wrapper {
+    z-index: 99;
+  }
+  .main-page-smallnav {
+    top: 107px;
+  }
+  .quiz-scroll-vidnav {
+    top: 56px;
+  }
+  .profile-quiz {
+    height: 100vh;
+    overflow-y: auto;
+    top: 0px !important;
+    padding: 0px !important;
+  }
+
+  .profile-scroll {
+    /* max-height:100vh; */
+    top: 55px !important;
+  }
+  .profile-scroll-vid {
+    /* max-height:100vh; */
+    top: 55px !important;
+  }
+  .subscribe-btn {
+    margin-left: 16px;
+  }
+  .subnavbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+  .subnavbar ul a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+  }
+  .search-mobile {
+    display: none;
+    position: absolute;
+    right: 70px;
+    font-size: 22px;
+    color: #8c8c8c;
+  }
+  .d-mobile {
+    display: block;
+  }
+  .d-mobile.footer-mobile {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    position: initial;
+    background: transparent;
+  }
+  .navbar-collapse .navbar-nav ul {
+    margin-top: 15px;
+  }
+  #MainNavbar {
+    transition: top 0.3s;
+    z-index: 99;
+    padding: 10px !important;
+  }
+  .footer-text {
+    display: none;
+  }
+
+  .quiz-rail-theme-wrapper {
+    min-height: 161px !important;
+  }
+  .competitive-rail-wrapper {
+    height: auto !important;
+  }
+  .quiz-rail-subject-wrapper .quiz-card-header {
+    border-top: 1px solid #caccce;
+    border-bottom: none;
+  }
+  .quiz-rail-subject-wrapper .bg-grade {
+    top: 77%;
+  }
+  .quiz-rail-subject-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .quiz-rail-select-theme {
+    width: 61px;
+    height: 64px;
+  }
+  .NewSubjectCard .chapters-complete {
+    margin-top: 0px;
+  }
+  .NewSubjectCard .pt-1 {
+    width: 100%;
+    margin-left: 0px;
+    font-size: 11px;
+  }
+  .chapter-nav-img {
+    display: flex !important;
+  }
+  .lessontitle {
+    width: 100%;
+  }
+  .chapter-progress-wrapper {
+    width: 70%;
+  }
+  .NewSubjectCard {
+    width: 42% !important;
+    height: auto !important;
+  }
+  .subject-img-circle {
+    width: auto;
+    height: auto;
+  }
+  .token-login-bignav {
+    top: 0px !important;
+  }
+
+  .subject-img-circle {
+    width: auto;
+    height: auto;
+  }
+  .NewSubjectCard .subject-main {
+    height: auto !important;
+  }
+  .NewSubjectCard .progress {
+    width: 100%;
+    margin: 0;
+  }
+  .quiz-top,
+  .island-revise {
+    width: 180px;
+    height: 67px;
+  }
+
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+  #quiz-player-footer {
+    width: 95vw;
+  }
+  .quiz-item-flex {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+  .quiz-item-flex .select-label {
+    height: auto;
+    font-size: 20px;
+  }
+  .quiz-quest {
+    font-size: 20px;
+  }
+  .right-count {
+    top: -50px;
+    right: 0px;
+  }
+  /* .lessonCard {
+    width: 320px;
+    margin-top: 50px !important;
+    margin-bottom: -30px !important;
+  } */
+  .wrong-count {
+    top: -50px;
+    right: 0px;
+  }
+  .img-quiz {
+    width: 200px;
+  }
+  .rdw-image-modal {
+    position: absolute;
+    right: 0px !important;
+  }
+  .rdw-emoji-modal {
+    position: absolute;
+    right: 0px !important;
+  }
+  .rdw-embedded-modal {
+    position: absolute;
+    right: 0px !important;
+  }
+  .quiz-reports-flex-circle {
+    width: 90px;
+    border-radius: 15px;
+    height: 90px;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .quiz-reports-flex-circle-wrap icon {
+    font-size: 60px;
+  }
+
+  .quiz-reports-flex-circle .text-subject-big {
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  .card-meme {
+    width: auto;
+  }
+  .select-theme-wrapper-mobile {
+    margin-bottom: 18px;
+  }
+  .select-theme {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+  }
+  /* .question-card .content{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .question-card .content h2 {
+    font-size: 19px;
+    text-align: center;
+    line-height: 30px;
+} */
+  .character-img {
+    top: -130%;
+  }
+  /* .question-card{
+  height: auto;
+}
+.question-card-wrapper{
+  margin-top: 30px;
+  height: auto;
+  width: auto;
+  left: 0;
+  right: 0;
+} */
+  .question-card .quiz-question {
+    padding: 5px;
+  }
+  .bottom-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom-images img {
+    width: 55%;
+  }
+  .course-progress {
+    float: none;
+    width: 100%;
+    order: 4;
+    padding-top: 10px;
+  }
+  .island-course-header {
+    flex-wrap: wrap;
+  }
+
+  .question-card-wrapper {
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .question-card-stack {
+    margin-top: 50px;
+  }
+  .question-card-mobile {
+    margin-top: -5px;
+  }
+  .circle-container p {
+    position: absolute;
+    left: 22px;
+    top: 65px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .circle-container > *:nth-of-type(1) p {
+    position: absolute;
+    left: 25px;
+    top: 66px;
+  }
+  .board-detail ul {
+    width: auto;
+  }
+  .find-friend2 .circle-container {
+    margin-bottom: 39px;
+  }
+}
+
+/* Portrait */ /* ----------- Google Pixel ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+
+  .custom-width {
+    padding: 0px 0px 20px 0px;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/* Landscape */ /* ----------- Google Pixel ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .custom-width {
+    padding: 0px 0px 20px 0px;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .custom-width {
+    padding: 0px 0px 20px 0px;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/* Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/*  ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px  */
+/* Portrait */
+@media screen and (device-width: 320px) and (device-height: 640px) and (orientation: portrait) {
+  /* #content {
+    background-image: url("../images/bottom-onboarding-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-attachment: fixed;
+  } */
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .intro-btn button {
+    min-width: 130px;
+    height: 100px;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 3px;
+  }
+
+  .intro-btn button em {
+    padding: 0px;
+    /* max-width:210px; */
+  }
+
+  .top-treasure-img,
+  .top-lock-img,
+  .top-wrong-answer-img,
+  .top-correct-answer-img {
+    position: absolute;
+    top: -78px;
+    left: 45% !important;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (orientation: portrait) {
+  /* #content {
+    background-image: url("../images/bottom-onboarding-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+  } */
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/* ----------- iPhone 5 -----------*/
+/*Portrait*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* #content {
+    background-image: url("../images/bottom-onboarding-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-attachment: fixed;
+  } */
+  .onboarding-school {
+    width: 207px;
+    height: 79px;
+  }
+
+  .onboarding-mobile {
+    width: 207px;
+    height: 79px;
+  }
+
+  .onboarding-board {
+    width: 207px;
+    height: 79px;
+  }
+
+  .onboarding-language {
+    width: 207px;
+    height: 79px;
+  }
+
+  .onboarding-grade {
+    width: 207px;
+    height: 79px;
+  }
+
+  .top-lock-img-2,
+  .page-not-found-img {
+    width: 207px;
+    height: 79px;
+  }
+
+  .quiz-top,
+  .island-revise {
+    width: 207px;
+    height: 79px;
+  }
+
+  .loginCard {
+    padding: 15px 15px;
+    min-height: 150px;
+    width: 95%;
+  }
+
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .intro-btn button {
+    min-width: 130px;
+    height: auto;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 3px;
+  }
+
+  .subject_item_flex,
+  .popularchapter_item_flex {
+    width: 90%;
+    height: auto;
+    margin: 5px auto 20px auto;
+  }
+  .subjectCard {
+    margin: 10px;
+  }
+
+  /* .lessonCard {
+    margin: 15px 5px;
+  } */
+
+  .subject-main {
+    height: 150px;
+    padding: 5px;
+    vertical-align: middle;
+  }
+
+  .subject-details-text {
+    width: 200px;
+  }
+
+  .top-treasure-img,
+  .top-lock-img,
+  .top-wrong-answer-img,
+  .top-correct-answer-img {
+    position: absolute;
+    top: -78px;
+    left: 37%;
+  }
+
+  .icon-call-us {
+    font-size: 40px;
+  }
+  .icon-email-us {
+    font-size: 40px;
+  }
+
+  .custom-width {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .shaka-video-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    background-image: url("../images/logo/logo-light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;
+  }
+
+  .fix-bottom-nav {
+    padding: 10px;
+    margin: auto;
+    background-color: #11144a;
+  }
+
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+  .cardContainer {
+    height: 53vh;
+  }
+
+  .quiz-subject-card {
+    margin: 5px;
+    width: 120px !important;
+  }
+  .quiz-reports-flex-cards {
+    width: 116px;
+  }
+  .card-container {
+    width: 300px;
+  }
+  .image-meme {
+    width: 280px;
+  }
+  .right-count {
+    top: -15px;
+    right: 0px;
+  }
+  .wrong-count {
+    top: -15px;
+    right: 0px;
+  }
+  .powerup-btn {
+    font-size: 10px;
+  }
+
+  .lessons-title {
+    font-size: 18px;
+  }
+
+  .bottom-clouds {
+    height: 66px;
+    width: 100%;
+    background-repeat: repeat-x;
+  }
+
+  .pos-bottom-clouds {
+    position: absolute;
+    bottom: -25px;
+  }
+
+  .bookmark-flex-card {
+    width: 100%;
+  }
+  .bookmark-subject-card {
+    width: 116px;
+    margin: 10px !important;
+  }
+}
+
+/*Landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .onboarding-school {
+    /* background-image: url("../images/select-school.svg");
+    background-repeat: no-repeat; */
+    width: 150px;
+    height: 59px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .loginCard {
+    border-radius: 30px;
+    padding: 30px;
+    margin: 0px;
+    min-height: 200px;
+    width: 100%;
+  }
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+
+  .pos-bottom-clouds {
+    position: absolute;
+    bottom: -90px;
+  }
+}
+
+/*--- iPhone 6, 7, & 8------------ */
+/*Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .onboarding-school {
+    /* background-image: url("../images/select-school.svg");
+    background-repeat: no-repeat; */
+    width: 300px;
+    height: 117px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .intro-btn button {
+    min-width: 130px;
+    height: auto;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px;
+  }
+  .top-treasure-img,
+  .top-lock-img,
+  .top-wrong-answer-img,
+  .top-correct-answer-img {
+    position: absolute;
+    top: -78px;
+    left: 45% !important;
+  }
+
+  .custom-width {
+    padding: 0px;
+  }
+
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+
+  .quiz-subject-card {
+    margin: 10px;
+    width: 140px !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  #content {
+    padding-bottom: 50px;
+  }
+
+  #footer {
+    display: block;
+  }
+
+  .onboarding-school {
+    width: 250px;
+    height: 94px;
+  }
+
+  .onboarding-mobile {
+    width: 250px;
+    height: 94px;
+  }
+
+  .onboarding-board {
+    width: 250px;
+    height: 94px;
+  }
+
+  .onboarding-language {
+    width: 250px;
+    height: 94px;
+  }
+
+  .onboarding-grade {
+    width: 250px;
+    height: 94px;
+  }
+
+  .quiz-top,
+  .island-revise {
+    width: 250px;
+    height: 94px;
+  }
+
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+
+  .quiz-subject-card {
+    margin: 10px;
+    width: 140px !important;
+  }
+}
+
+/* ------------iphone x media queries---------------*/
+/*Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #content {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .loginCard {
+    border-radius: 40px;
+    padding: 40px 15px;
+    margin: 50px;
+    min-height: 150px;
+    width: 98%;
+  }
+
+  .onboarding-school {
+    /* background-image: url("../images/select-school.svg");
+    background-repeat: no-repeat; */
+    width: 270px;
+    height: 100px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .wrong-answer {
+    display: none;
+  }
+
+  .correct-answer {
+    display: none;
+  }
+
+  .custom-width {
+    padding: 0px 0px 20px 0px;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+}
+
+/*Landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  #content {
+    padding-bottom: 50px;
+  }
+
+  #footer {
+    display: block;
+  }
+  .video-Card {
+    margin: 0px;
+    border: none;
+  }
+
+  .pos-bottom-clouds {
+    position: absolute;
+    bottom: -80px;
+  }
+}

@@ -1,0 +1,86 @@
+/* CSS Document */
+
+@font-face {
+  font-family:'blog-primary';
+  src: url("../font/Righteous-Regular.ttf"); 
+  /* src:url("../font/CarterOne.ttf") ; */
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+
+/*------------------for quiz-----------------*/
+
+
+@font-face {
+  font-family: 'quiz-title-font';
+  src: url('../font/Righteous-Regular.ttf'); 
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+
+@font-face {
+  
+  font-family: 'quiz-sec-font';
+  src: url('../font/Roboto-Regular.ttf'); 
+  /* src: url('../font/NotoSans-Medium.ttf');  */
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+
+@font-face {
+  
+  font-family: 'quiz-sec-font-reg';
+  src: url('../font/Roboto-Regular.ttf'); 
+  /* src: url('../font/NotoSans-Regular.ttf');  */
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+@font-face {
+  font-family: 'quiz-sec-font-med';
+  src: url('../font/Roboto-Medium.ttf'); 
+  /* src: url('../font/NotoSans-Medium.ttf');  */
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+
+
+/***********************Roboto Font******************/
+font-face {
+  font-family:"blog-secondary-regular";
+  src: url('../font/Roboto-Regular.ttf'); 
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+font-face {
+  font-family:"blog-secondary-medium";
+  src: url('../font/Roboto-Medium.ttf'); 
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+font-face {
+  font-family:"blog-secondary-bold";
+  src: url('../font/Roboto-Bold.ttf'); 
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}

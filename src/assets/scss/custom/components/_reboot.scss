@@ -1,0 +1,44 @@
+/* =============
+   General
+============= */
+
+// html {
+//   position: relative;
+//   min-height: 100%;
+// }
+
+// .h1,.h2,.h3,.h4,.h5,.h6,
+// h1,h2,h3,h4,h5,h6 {
+//   //color: $gray-700;
+//   font-family: $font-family-secondary;
+//   //font-weight: $font-weight-semibold;
+// }
+
+a {
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: 500;
+}
+
+* {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+* {
+  font-family: $secondary-text;
+}
+
+body {
+  background-color: $page-bg;
+  font-family: $secondary-text;
+  color:#000;
+}
+
+// .uk-input, .uk-select, .uk-textarea{
+//   border-radius:10px!important;
+// }

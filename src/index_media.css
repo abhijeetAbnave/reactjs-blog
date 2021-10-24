@@ -1,0 +1,172 @@
+/* CSS Document */
+/* ##Device = Desktops ##Screen = 1600px to higher resolution desktops */
+@media (min-width: 1600px) {
+
+  
+  }
+  
+  /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /*---------iPad-------------*/
+  
+  /* #Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+  }
+  
+  /*#Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px used for iphoneX landscape also */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+  }
+  
+  /*---------iPad pro-------------*/
+  
+  /* Portrait used only for specific css for ipad pro landscape*/
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    
+  }
+  
+  /* ##Device = Low Resolution Tablets, Mobiles (Landscape)##Screen = B/w 481px to 767px*/
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+   
+  }
+  
+  /*---------iPad END-------------*/
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+   
+    .create_quize_left{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+      
+    }
+    .create_quize_right {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        align-content: center;       
+       
+      }
+      .edit_btn{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      .quiz_editor_main {
+        display: flex;
+        flex-direction: column;       
+      }
+      .login_message img {
+        width: 230px;
+      }
+  }
+  
+  /*--- iPhone 6, 7, & 8 in portrait For my ref-this query is dominant for all iPhones also android phones  pixel2 */
+  
+  @media (min-width: 300px) and (max-width: 640px) {
+    
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    
+  }
+  
+  /* Portrait */ /* ----------- Google Pixel ----------- */
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+ 
+  }
+  
+  /* Landscape */ /* ----------- Google Pixel ----------- */
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+   
+  }
+  
+  /* ----------- Google Pixel XL ----------- */
+  
+  /* Portrait */
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+   
+  }
+  
+  /* Landscape */
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+   
+  }
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px  */
+  /* Portrait */
+  @media screen and (device-width: 320px) and (device-height: 640px) and (orientation: portrait) {
+   
+  }
+  
+  /* Landscape */
+  @media screen and (device-width: 320px) and (device-height: 640px) and (orientation: portrait) {
+   
+  }
+  
+  /* ----------- iPhone 5 -----------*/
+  /*Portrait*/
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .create_quize_box {
+      width:100%;
+    }
+    .create_quize_box strong {
+        font-size: 14px;
+    }
+    .addQize_text h2 {
+        font-size: 18px;
+    }
+    /* .addQuize_img{
+      width: 55px;
+      height:55px;
+    }
+    .addQuize_img span {
+      background: #e8eef4;
+      width: 55px;
+      text-align: center;
+      height: 55px;
+      display: flex;
+      line-height:55px;
+      border-radius: 50px;
+      margin: auto;
+      overflow: hidden;
+    } */
+
+
+  }
+  
+  /*Landscape*/
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+   
+  }
+  
+  /*--- iPhone 6, 7, & 8------------ */
+  /*Portrait*/
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+   
+  }
+  
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+   
+  }
+  
+  /* ------------iphone x media queries---------------*/
+  /*Portrait*/
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+   
+  }
+  
+  /*Landscape*/
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+   
+  }
+  

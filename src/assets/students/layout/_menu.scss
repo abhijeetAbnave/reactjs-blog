@@ -1,0 +1,38 @@
+.bg-nav { background-color:$bg-nav-blog ;color:#fff;border: none !important;}
+// .d-nav-mobile{
+//     display:block;
+// }
+.quiz-menu .navbar-responsive {
+    background-color: $black!important;
+    color: #fff;
+    // border-top: 0.1px solid #3d3d3d;
+    
+}
+
+.quiz-nav-sub{
+    background-color:lighten($black,3%);
+    // height:60px;
+    
+}
+.nav-text{
+    display: none;
+}
+.chapter-nav-text{
+    display: block;
+    font-family: $primary-title-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height:40px;
+}
+.chapter-nav-img{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-quiz {
+    max-height:100vh !important;
+    overflow-y: auto;
+    // top:0px !important;
+  }

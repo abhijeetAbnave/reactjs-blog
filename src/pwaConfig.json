@@ -1,0 +1,9 @@
+{
+    "apiEndPoint": "https://fd0a9c1209ad.ngrok.io",
+    "tokenHmacKey": "12345",
+    "predict": "summary",
+    "authenticate": "verify",
+    "register": "users",
+    "theme": "dark",
+    "jwtSecretKey": "THIS_IS_SECRET_KEY!@"
+}

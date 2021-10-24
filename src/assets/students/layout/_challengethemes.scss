@@ -1,0 +1,173 @@
+@mixin challenge($theme-name, $container-bg, $challenge-pri-bg, $challenge-sec-bg, $button-bg) {
+  .#{$theme-name} {
+    body {
+      background-image: $container-bg;
+    }
+
+    &.challenge-theme-color {
+      height: 100vh;
+      display: block;
+      background-image: $container-bg;
+      padding: 0px;
+      margin: 0px;
+      width: 100vw;
+    }
+
+    input[type="checkbox"]:checked+.challenge-theme-bg {
+      background-image: $container-bg;
+    }
+
+    .challenge-pri-bg {
+      background: $challenge-pri-bg;
+    }
+
+    .challenge-sec-bg {
+      background: $challenge-sec-bg;
+    }
+
+    .challenge-modal-theme {
+      background: $container-bg;
+    }
+
+
+
+    .action-quiz:hover {
+      background: $challenge-pri-bg;
+    }
+
+    .action-quiz:active,
+    .action-quiz:focus {
+      background: $challenge-pri-bg;
+    }
+
+    .quiz-bg-subject-icon.challenge-pri-bg {
+      background: $challenge-pri-bg !important;
+      margin: 0px;
+      width: 60px;
+      height: 60px;
+      line-height: 62px;
+    }
+
+    .quiz-subject {
+      background: $challenge-pri-bg;
+    }
+
+    .challenge-bottom-btn {
+      border-radius: $border-radius-challenge;
+      color: $challenge-pri-bg;
+      background-color: #fff;
+      border: none;
+      height: 45px;
+      font-size: 18px;
+      margin: 0px 5px;
+    }
+
+    .join-btn {
+      background: $challenge-sec-bg;
+      color: #fff;
+
+      &:hover {
+        background-color: darken($challenge-sec-bg, 20%);
+      }
+    }
+
+    .quiz-questions {
+      background-color: lighten($challenge-sec-bg, 5%);
+      color: #fff;
+    }
+
+    .theme-block input[type="radio"]:checked+.theme-block-1 {
+      background: linear-gradient(to bottom, $challenge-gradient-one-top, $challenge-gradient-one-bottom);
+      border: none;
+    }
+
+    .theme-block input[type="radio"]:checked+.theme-block-2 {
+      background: linear-gradient(to bottom, $challenge-gradient-two-top, $challenge-gradient-two-bottom);
+      border: none;
+    }
+
+    .theme-block input[type="radio"]:checked+.theme-block-3 {
+      background: linear-gradient(to bottom, $challenge-gradient-three-top, $challenge-gradient-three-bottom);
+      border: none;
+    }
+
+    .theme-block input[type="radio"]:checked+.theme-block-4 {
+      background: linear-gradient(to bottom, $challenge-gradient-four-top, $challenge-gradient-four-bottom);
+      border: none;
+    }
+
+    .quiz-modal-header {
+      background-image:$challenge-pri-bg;
+      border-radius: $border-radius $border-radius 0px 0px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+    }
+    .quiz-modal-header::after {
+      background-color:$challenge-pri-bg;
+       content: "";
+       width: 100%;
+       height: 52px;
+       position: absolute;
+       top: 62px;
+       right: 0;
+      // background-color: $bg-quiz-gradient-one-bottom;
+       transform: skewY(-3deg);
+    }
+
+
+  }
+}
+
+@include challenge(challenge-theme-1, linear-gradient(to bottom, $challenge-gradient-one-top, $challenge-gradient-one-bottom), $challenge-theme1-pri, $challenge-theme1-sec, $challenge-theme1-pri);
+
+@include challenge(challenge-theme-2, linear-gradient(to bottom, $challenge-gradient-two-top, $challenge-gradient-two-bottom), $challenge-theme2-pri, $challenge-theme2-sec, $challenge-theme2-pri);
+
+@include challenge(challenge-theme-3, linear-gradient(to bottom, $challenge-gradient-three-top, $challenge-gradient-three-bottom), $challenge-theme3-pri, $challenge-theme3-sec, $challenge-theme3-pri);
+
+@include challenge(challenge-theme-4, linear-gradient(to bottom, $challenge-gradient-four-top, $challenge-gradient-four-bottom), $challenge-theme4-pri, $challenge-theme4-sec, $challenge-theme4-pri);
+@include challenge(challenge-theme-default, $blog-main, $challenge-theme4-pri, $challenge-theme4-sec, $challenge-theme4-pri);
+
+
+/*----for Selecting themes on drawer--*/
+
+.theme-block-1 {
+  background: linear-gradient(to bottom, $challenge-gradient-one-top, $challenge-gradient-one-bottom);
+}
+
+.theme-block-2 {
+  background: linear-gradient(to bottom, $challenge-gradient-two-top, $challenge-gradient-two-bottom);
+}
+
+.theme-block-3 {
+  background: linear-gradient(to bottom, $challenge-gradient-three-top, $challenge-gradient-three-bottom);
+}
+
+.theme-block-4 {
+  background: linear-gradient(to bottom, $challenge-gradient-four-top, $challenge-gradient-four-bottom);
+}
+
+input[type="checkbox"]:checked+.challenge-theme-bg {
+  background-color: $blog-main !important;
+}
+
+input[type="checkbox"]:checked+.challenge-theme-bg-default {
+  background-color: $blog-main !important;
+}
+// .quiz-modal-header {
+//   //background-image:$challenge-pri-bg;
+//   border-radius: $border-radius $border-radius 0px 0px;
+//   height: 100px;
+//   color: #fff;
+//   text-align: center;
+// }
+//.quiz-modal-header::after {
+//   content: "";
+//   width: 100%;
+//   height: 52px;
+//   position: absolute;
+//   top: 76px;
+//   right: 0;
+//  // background-color: $bg-quiz-gradient-one-bottom;
+//   transform: skewY(-3deg);
+// }

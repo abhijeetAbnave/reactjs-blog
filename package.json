@@ -1,0 +1,80 @@
+{
+  "name": "summarizer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.10",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "browser-image-compression": "^1.0.14",
+    "circular-json": "^0.5.9",
+    "css-loader": "^6.2.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "material-ui": "^0.20.2",
+    "qs": "^6.9.4",
+    "react": "^17.0.2",
+    "react-device-detect": "^1.12.1",
+    "react-div-100vh": "^0.3.8",
+    "react-dom": "^17.0.2",
+    "react-phone-input-2": "^2.13.7",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-s3": "^1.3.1",
+    "react-scripts": "4.0.3",
+    "react-toast-notifications": "^2.4.0",
+    "reactstrap": "^8.5.1",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "sass-loader": "^12.1.0",
+    "serve": "^12.0.0",
+    "uikit": "^3.7.1",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.4",
+    "workbox-broadcast-update": "^5.1.4",
+    "workbox-cacheable-response": "^5.1.4",
+    "workbox-core": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
+    "workbox-google-analytics": "^5.1.4",
+    "workbox-navigation-preload": "^5.1.4",
+    "workbox-precaching": "^5.1.4",
+    "workbox-range-requests": "^5.1.4",
+    "workbox-routing": "^5.1.4",
+    "workbox-strategies": "^5.1.4",
+    "workbox-streams": "^5.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.37.5"
+  }
+}

@@ -1,0 +1,750 @@
+@mixin island($theme-name, $container-bg, $island-pri-bg, $island-sec-bg, $button-bg, $nutral-bg, $island-text) {
+    .#{$theme-name} {
+        body {
+            background-image: $container-bg;
+        }
+        .theme-color {
+            height: 100vh;
+            display: block;
+            background-image:$container-bg;
+            padding: 0px;
+            margin: 0px;
+            width: 100vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+           
+        }
+        .external-color {
+            background-image: $container-bg;
+        }
+        .island-course-header {
+            backdrop-filter: blur(5px);
+        }
+        .island-course-content {
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;     
+            // background-image: $container-bg;                           
+        }
+
+        #content-with-header {
+            position: fixed;
+            top:56px;
+            left:0px;
+            height: calc(100vh - 56px);
+            width: 100vw;
+            overflow-y: auto;
+            overflow-x: hidden;
+           // background-image: $container-bg;
+           
+        }
+
+        #island-content {
+            height: 100vh;
+            display: block;
+            // background-image: $container-bg;
+            padding: 0px;
+            margin: 0px;
+            width: 100vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .fix-bottom-nav {
+            background: transparent;
+        }
+        .island-pri-bg {
+            border-radius: $border-radius-quiz;
+            color: #fff;
+            background-color: $island-pri-bg;
+            height: 40px;
+            min-width: 40px;
+            border: none;
+            max-width: auto;
+            padding: 0px 5px;
+
+            &:hover {
+                background-color: darken($island-sec-bg, 10%);
+                border: none;
+            }
+
+            &:active,
+            &:focus {
+                background-color: $island-sec-bg;
+            }
+
+            &:visited {
+                background-color: $island-sec-bg;
+            }
+        }
+        .intro-btn button {
+            // width:260px;
+            min-height: 52px;
+            background-color: $island-pri-bg;
+            border-radius: $border-radius-quiz;
+            border: none;
+            font-size: 15px;
+            color: #ffffff;
+            // margin-top: 12px;
+            // margin-left: 10px;
+            line-height: 16px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            // direction: ltr;
+            &:hover {
+                background-color: $island-pri-bg;
+            }
+
+            &:active {
+                background-color: $island-pri-bg;
+            }
+
+            &:visited {
+                background-color: $island-pri-bg;
+            }
+
+            &:focus {
+                background-color: $island-pri-bg;
+            }
+
+            &:active:focus {
+                background-color: $island-pri-bg;
+            }
+
+            &:focus-within {
+                background-color: $island-pri-bg;
+            }
+
+        }
+        .incomplete-block .intro-btn button {
+            opacity: 0.3;
+            cursor: not-allowed;
+
+            &:hover {
+                // border: 1px solid #fff !important;
+                background-color: $island-pri-bg;
+            }
+
+            &:active {
+                // border: 1px solid #fff !important;
+                background-color: $island-pri-bg;
+            }
+
+            &:visited {
+                // border: 1px solid #fff !important;
+                background-color: $island-pri-bg;
+            }
+        }
+        .button {
+            background-color: $button-bg;
+            border: 0;
+            border-radius: $border-radius-quiz;
+            bottom: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 1em 2em;
+            position: absolute;
+            right: 10px;
+        }
+        .course-progress ul {
+            background-color: $island-sec-bg;
+        }
+        .course-progress ul li {
+            color: #fff;
+        }
+        .videosection .nav_bg {
+            background: transparent !important;
+        }
+        .revisevideo .nav_bg {
+            background: transparent !important;
+        }
+        .treasurevideo .nav_bg {
+            background: transparent !important;
+        }
+        .lessons-nav-button {
+            background-color: darken($island-pri-bg, 10%) !important;
+        }
+        .video-lesson-card {
+            background-color: darken($island-pri-bg, 40%);
+            border-radius: 0px;
+            margin: 0px auto;
+            padding: 0px;
+            // height: 400px;
+            // overflow-y: auto;
+        }
+        .video-Card {         
+            background-color: darken($island-pri-bg, 40%);
+        }
+
+        .info-screen-header-border,.info-screen-footer-border {
+            border-color: rgba(255, 255, 255, 0.8)!important;
+        }
+        .info-screen {
+            background-color: $island-sec-bg !important;
+            border:3px solid #fff!important;
+        }
+      
+        .select-theme {
+            height: 16vh;
+            display: block;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            opacity: 1;
+            width: 110px;
+            margin: 10px;
+            border: 3px solid transparent;
+        }
+        .island-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 81vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .lessons-nav-button-circle {
+            background-color: $island-sec-bg !important;
+        }
+        .vid-lessons-title {
+            font-family: $primary-title-text;
+            font-size: 18px;
+            text-align: left;
+            color: $white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+        .lessons-nav-button-circle {
+            cursor: pointer;
+            background-color: $island-sec-bg !important;
+            border-radius: 50px;
+            padding: 0px;
+            box-shadow: none;
+            border: 1px solid transparent;
+            font-family: $primary-title-text;
+            font-size: 18px;
+            color: #fff;
+            height: 35px;
+            width: 35px;
+            margin: 0px 10px;
+            text-align: center;
+            line-height: 35px;
+
+            &:hover {
+                color: $yellow !important;
+                border: 1px solid transparent !important;
+                opacity: 1;
+                background-color: $island-sec-bg !important;
+            }
+
+            &:active {
+                color: $yellow !important;
+                border: 1px solid transparent !important;
+                opacity: 1;
+                background-color: #fff !important;
+            }
+
+            &:visited {
+                color: $yellow !important;
+                border: 1px solid transparent !important;
+                opacity: 1;
+                background-color: $island-sec-bg !important;
+            }
+        }
+
+        .lessons-nav-button-circle-active {
+            cursor: pointer;
+            border-radius: 50px;
+            padding: 0px;
+            box-shadow: none;
+            border: 1px solid transparent;
+            font-family: $primary-title-text;
+            font-size: 18px;
+            height: 35px;
+            width: 35px;
+            margin: 0px 10px;
+            text-align: center;
+            line-height: 35px;
+            color: $island-sec-bg !important;
+            opacity: 1;
+            background-color: #fff !important; 
+            &:active,&:hover,&:visited  {
+                color: $yellow !important;
+                border: 1px solid transparent !important;
+                opacity: 1;
+                background-color: #fff !important;
+            } 
+        }
+
+        .step-rect-sel {
+            background-color: #fff !important;
+        }
+
+        .step-rect {
+            background-color: darken($island-pri-bg,10%) !important;           
+        }
+
+        
+
+        .island-modal {
+            height: auto;
+            display: block;
+            background-color: $island-pri-bg;
+            padding: 0px;
+            margin: 0px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .island-report {
+            height: 90vh;
+            width: 100vw;
+            overflow-y: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+      
+
+        .modal-header {
+            color: $island-sec-bg !important;
+            border-radius: $border-radius $border-radius 0px 0px;
+        }
+
+        .modal-body {
+            // background-color: $island-sec-bg !important;
+            border-radius: 0px ;
+
+        }
+
+        .modal-custom-bg {
+            background-color: $island-sec-bg !important;
+            color: #fff !important;
+            h5 { color: #fff !important;}
+        }
+        .modal-custom-footer-bg {
+            background-color: $island-sec-bg !important;
+        }
+
+        .btn-pill {
+            height:40px;
+            font-size:15px;
+            line-height:28px;
+            border-radius:100px;
+            font-family: $secondary-text-medium;
+            font-weight: 500;
+            background-color: darken($island-sec-bg, 10%);
+            border:none;
+            padding:0px 8px;
+            color:#fff;
+            z-index: 3000;
+          
+            .btn-basic:hover {
+              border: none;
+              outline: none !important;
+            }
+          
+            .btn-basic:focus {
+              border: none;
+              outline: 0px auto -webkit-focus-ring-color !important;
+            }
+          }
+          
+
+        .modal-button {
+            min-width: auto;
+            min-height: 32px;
+            background-color: darken($island-sec-bg, 10%);
+            border-radius: $border-radius!important;
+            border: none;
+            font-size: 15px;
+            color: #ffffff;
+            line-height: 16px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            direction: ltr;
+
+            &:hover {
+                background-color: $island-pri-bg;
+            }
+            &:active {
+                background-color: $island-pri-bg;
+            }
+            &:visited {
+                background-color: $island-pri-bg;
+            }
+            &:focus {
+                background-color: $island-pri-bg;
+            }
+            &:active:focus {
+                background-color: $island-pri-bg;
+            }
+            &:focus-within {
+                background-color: $island-pri-bg;
+            }
+
+        }
+
+        .theme-text, .lessontitle {
+            color: $island-text!important;
+        }
+
+        .progress-bar-color{
+            background-color:$island-text!important;
+            border-radius: $border-radius;
+        }
+
+        .island-tabs-sel {
+            border-bottom: 4px solid $island-sec-bg;
+            color: $island-sec-bg;
+
+        }
+
+
+
+
+        .test {
+            background: $container-bg;
+        }
+
+        .island-panel-theme-block input[type="radio"]:checked+.island-theme-select-4 {
+            background: $container-bg !important;          
+        }
+
+        .island-panel-theme-block input[type="radio"]:checked+.island-theme-select-1 {
+            background: linear-gradient(to bottom, $island-gradient-one-top, $island-gradient-one-bottom);
+        }
+
+        .island-panel-theme-block input[type="radio"]:checked+.island-theme-select-2 {
+            background: linear-gradient(to bottom, $island-gradient-two-top, $island-gradient-two-bottom);
+        }
+
+        .island-panel-theme-block input[type="radio"]:checked+.island-theme-select-3 {
+            background: linear-gradient(to bottom, $island-gradient-three-top, $island-gradient-three-bottom);
+        }      
+
+        .island-panel-theme-block input[type="radio"]:checked+.island-theme-select-5 {
+            background: linear-gradient(to bottom, $island-gradient-dark-top, $island-gradient-dark-bottom);
+        }
+
+        // .island-panel-theme-block input[type="radio"]:checked+label::after {
+        //     font-family: fontello;
+        //     content: "";
+        //     height: 30px;
+        //     width: 30px;
+        //     // background: url(/asset/images/check.svg);
+        //     background: url("../images/check.svg");
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     background-size: 20px;
+        //     z-index: 999;
+        //     position: absolute;
+        //     top: -15%;
+        //     right: 29%;
+
+        // }
+
+        .input[type="radio"]:checked+label {
+            background: $container-bg !important;
+
+        }
+
+        .nav_bg {
+            background-color: Transparent;
+            width: 100%;
+        }
+
+        .modal-title {
+            color: $island-sec-bg;
+        }
+
+        .bg-circle-big-silver {
+            background-color: $island-pri-bg;
+            color: #fff;
+        }
+
+        .quiz-image {
+            display: flex;
+            align-items: center;
+            // border-radius: 0px 0px 15px 15px;
+            width: 100%;
+            background-color: darken($island-pri-bg, 10%);
+        }
+
+        .ant-drawer-header {
+            background-color: $island-pri-bg;
+            .ant-drawer-title {
+                color: #fff;
+            }
+        }
+
+        .shaka-seek-bar {
+            border: 0.5px solid $island-pri-bg !important;
+            background-color: $island-pri-bg !important;
+        }
+
+        .shaka-range-element {
+            border: 0.5px solid $island-pri-bg !important;
+            background-color: $island-pri-bg !important;
+        }
+
+   
+        // button:active,
+        // button:focus {
+        //     background-color: $island-sec-bg !important;
+        //     color:#fff!important;
+        // }
+
+        .dv-star-rating {
+            display: flex;
+
+            input[type="radio"]:checked+label {
+                border: 3px solid transparent;
+                background-color: $island-pri-bg;
+                opacity: 1;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .dv-star-rating-empty-star {
+            background-color: $lightgrey;
+        }
+
+        .dv-star-rating-full-star {
+            background-color: $island-pri-bg;
+        }
+
+        .button-red,
+        .button-red:active,
+        .button-red:focus,
+        .button-red:visited {
+            background-color: $color-maths !important;
+        }
+
+        .button-green,
+        .button-green:active,
+        .button-green:focus,
+        .button-green:visited,
+        .button-green:focus-within,
+        .button-green:focus-visible {
+            background-color: $color-bio !important;
+        }
+
+        .info-bg-island {
+            background-color: $island-pri-bg;
+        }
+     
+    //    .modal-content {
+    //     border-radius: $border-radius!important;
+    //     border:3px solid #fff;
+    //   }
+
+    }
+}
+
+@include island(island-theme-1, linear-gradient(to bottom, $island-gradient-one-top, $island-gradient-one-bottom), $theme1-pri, $theme1-sec, $theme1-pri, $grey,$theme1-text);
+
+@include island(island-theme-2, linear-gradient(to bottom, $island-gradient-two-top, $island-gradient-two-bottom), $theme2-pri, $theme2-sec, $theme2-pri, $grey,$theme2-text);
+
+@include island(island-theme-3, linear-gradient(to bottom, $island-gradient-three-top, $island-gradient-three-bottom), $theme3-pri, $theme3-sec, $theme3-pri, $grey,$theme3-text);
+
+@include island(island-theme-4, linear-gradient(to bottom, $island-gradient-three-top, $island-gradient-three-bottom), $theme3-pri, $theme3-sec, $theme3-pri, $grey,$theme3-text);
+
+@include island(island-theme-maths, linear-gradient(to bottom, $island-gradient-maths-top, $island-gradient-maths-bottom), $ismaths, $ismaths2, $ismaths, $grey,$thememaths-text);
+
+@include island(island-theme-chemistry, linear-gradient(to bottom, $island-gradient-chemistry-top, $island-gradient-chemistry-bottom), $ischemistry, $ischemistry2, $ischemistry, $grey,$themechemistry-text);
+
+@include island(island-theme-physics, linear-gradient(to bottom, $island-gradient-physics-top, $island-gradient-physics-bottom), $isphysics, $isphysics2, $isphysics, $grey,$themephysics-text);
+
+@include island(island-theme-biology, linear-gradient(to bottom, $island-gradient-biology-top, $island-gradient-biology-bottom), $isbiology, $isbiology, $isbiology, $grey,$themebiology-text);
+
+@include island(island-theme-5, linear-gradient(to bottom, $island-gradient-dark-top, $island-gradient-dark-bottom), $theme5-pri, $theme5-sec, $theme5-pri, $grey,$theme5-text);
+
+@include island(island-theme-default, linear-gradient(to bottom, $island-gradient-dark-top, $island-gradient-dark-bottom), $theme1-pri, $theme1-sec, $theme1-pri, $grey,$theme1-text);
+
+
+/*----for Selecting themes on drawer--*/
+
+
+
+
+.background-wrap {
+    margin: auto;
+}
+
+.background-wrap-theme {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.island-panel-theme-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.select-theme-dr {
+    height: 80px;
+    display: block;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    width: 80px;
+    margin: 10px;
+    border: 3px solid #fff;
+}
+
+.island-theme-select-1 {
+    background: linear-gradient(to bottom, $island-gradient-one-top, $island-gradient-one-bottom);
+}
+
+.island-theme-select-2 {
+    background: linear-gradient(to bottom, $island-gradient-two-top, $island-gradient-two-bottom);
+}
+
+.island-theme-select-3 {
+    background: linear-gradient(to bottom, $island-gradient-three-top, $island-gradient-three-bottom);
+}
+
+.island-theme-select-4 {
+    background: linear-gradient(to bottom, $island-gradient-dark-top, $island-gradient-dark-bottom);
+}
+
+.island-theme-select-5 {
+    background: linear-gradient(to bottom, $island-gradient-dark-top, $island-gradient-dark-bottom);
+}
+
+.fixed-top {
+    z-index: 1000;
+}
+
+
+.island-intermidate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.intermidate-info-wrapper {
+    display: inline;
+}
+
+.info-bg-island {
+    width: auto;
+    padding: 20px;
+    height:auto;  
+    border-radius: $border-radius-quiz;
+    border: none;
+    color: #ffffff;
+    // margin-top: 12px;
+    // margin-left: 10px;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .caption {
+        font-family: $secondary-text-bold;
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    .lesson-name {
+        font-family: $secondary-text;
+        font-size: 22px;
+        text-align:center;
+    }
+}
+
+.island-panel-theme-block input[type="radio"]:checked+label::after {
+    font-family: fontello;
+    content: "";
+    height: 30px;
+    width: 30px;
+    // background: url(/asset/images/check.svg);
+    background: url("../images/check.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 20px;
+    z-index: 999;
+    position: absolute;
+    top: -15%;
+    right: 29%;
+
+}
+
+
+
+.step-rect-sel {
+    width: 20px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: block;
+    margin: 10px 5px;
+  }
+  
+  .step-rect {
+    width: 20px;
+    height: 5px;
+    border-radius: 50px;
+    opacity: 0.3;
+    display: block;
+    margin: 10px 5px;
+  }
+
+  .video-Card {
+    padding: 0px;
+    margin: 0px auto;
+    border-radius: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+    overflow: hidden;
+   
+    
+}
+.vid-card-vid {
+    display:flex;
+    align-items: center;
+    justify-content: center;   
+    height:100%;
+    height:60vh;
+}
+
+.vid-card-info{       
+    overflow-y: auto;
+    height:100%;
+    height:60vh;
+}
+
+.info-screen {
+       border:3px solid #fff!important;
+       border-radius:$border-radius;
+}
+
+
+

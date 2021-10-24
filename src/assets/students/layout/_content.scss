@@ -1,0 +1,19 @@
+* {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+// * {
+//   font-family: $secondary-text;
+// }
+
+body {
+  // background-color: $page-bg;
+ // background-attachment: $blog-bg-light;
+  font-family: $secondary-text;
+  user-select: none;
+}
+
+

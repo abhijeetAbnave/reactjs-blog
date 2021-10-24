@@ -1,0 +1,2 @@
+export const SET_UI_STATES = 'SET_UI_STATES';
+export const CLEAR_UI_STATES = 'CLEAR_UI_STATES';

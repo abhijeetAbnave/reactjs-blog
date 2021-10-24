@@ -1,0 +1,445 @@
+@mixin unified-theme($unified-theme-name, $unified-bg, $theme-text-color, $theme-nav-bg, $theme-nav-text, $theme-border-color, $theme-contrast-color, $logo-image, $loading-logo) {
+  .#{$unified-theme-name} {
+    background-color: $unified-bg;
+    background-image: $unified-bg;
+    // color:$theme-text-color;
+    h1,
+    h2,    
+    .bread-crumb,.page-header,.leader-num-text ,.no-content-message,.quiz-title-text,.rail-title 
+      {
+      color: $theme-text-color ;
+    }
+
+    h5,h3, h4,h6,.ReportCard,.leaderboard-small-title {
+      color: $card-textcolor !important;
+    }
+ 
+
+    .layout-full {
+      background-color: $unified-bg;
+      background-image: $unified-bg;
+    }
+
+    .rail-title {
+      color: $theme-text-color !important;
+      //font-family: $primary-title-text;
+    }
+
+    .side-menu {
+      background-color: $theme-nav-bg !important;
+      color: $theme-nav-text !important;
+    }
+
+    .side-menu-nav .nav-item .nav-link {
+      color: $theme-nav-text !important;
+    }
+
+
+    .page-header {
+      background-color: $unified-bg;
+      border-bottom: 0.5px solid $theme-border-color;
+    }
+
+ 
+
+    .back-nav {
+      background-color: $theme-nav-bg;
+      color: $theme-nav-text;
+    }
+
+    .panel-heading {
+      border-bottom: 0.5px solid $theme-border-color;
+    }
+
+    .nav-tabs>li>a,
+    .nav-pills>li>a {
+      color: $theme-text-color !important;
+    }
+
+ 
+
+    .logo-dark {
+      background-image: $logo-image;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      margin: auto;
+    }
+
+    .loader-logo {
+      background-image: $loading-logo;
+      width: 100px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      margin: auto;
+    }
+
+    .nav-circle {
+      color: $theme-nav-text;
+    }
+
+    .btn-outline-primary {
+      color:$theme-text-color!important;
+     
+    } 
+    
+    .ant-steps-item-title {
+      color: $theme-text-color!important;
+      font-weight: 600!important;
+    }
+
+    /*for profile module*/
+    // .select-label-avatar {
+    //   border: 3px solid $theme-contrast-color;
+    // }
+
+    // input[type="radio"]:checked+label {
+    //   border: 3px solid $theme-contrast-color;
+    // }  
+    
+    // .horizontal-rule {
+    //   border-bottom: 0.5px solid $theme-border-color;
+    // }
+
+    // .profile-subtitle {
+    //   color: $theme-text-color !important;
+    // }
+
+    /*--forcalendar-module---*/
+
+  }
+}
+
+@include unified-theme(unified-theme-light, $unified-bg-light, $light-theme-text, $light-theme-nav-bg, $light-theme-nav-text, $light-theme-border-color, $light-theme-contrast-color, $logo-theme-light, $loadinglogo-theme-light);
+@include unified-theme(unified-theme-dark, $unified-bg-dark, $dark-theme-text, $dark-theme-nav-bg, $dark-theme-nav-text, $dark-theme-border-color, $dark-theme-contrast-color, $logo-theme-dark, $loadinglogo-theme-dark);
+//@include unified-theme(unified-theme-quiz, linear-gradient(to bottom, $bg-quiz-gradient-one-top, $bg-quiz-gradient-one-bottom), $dark-theme-text, $quiz-theme-nav-bg, $quiz-theme-nav-text,$quiz-theme-border-color,$dark-theme-contrast-color,$logo-theme-dark,$loadinglogo-theme-light);
+
+.layout-full {
+  // height: calc(100vh - 50px);
+  //overflow-y: auto;
+  //overflow-x:hidden;
+  // width: calc(100vw - 75px);
+  margin: auto !important;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  // padding-bottom:100px!important;
+}
+
+.side-menu {
+  background-color: #43c6ac;
+}
+
+.nav-circle {
+  background-color: transparent;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border-radius: 50%;
+}
+
+#CommonPageHolder {
+  height: 100vh;
+  width: calc(100vw - 75px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+}
+
+#CommonPageloader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+
+}
+
+#CommonPageloader-full {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+}
+
+
+#CommonPageHolder-rank {
+  height: 100vh;
+  width: calc(100vw - 75px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: block;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+}
+
+
+#CommonPageHolder-teachers {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: auto;
+}
+
+.page-header {
+  font-family: $secondary-text;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: $unified-bg-light;
+  z-index: 1000;
+}
+
+.horizontal-rule {
+  border-bottom: 1px solid $lightgrey;
+  margin: 15px !important;
+}
+
+/*----for practice module----used #quiz-bg  on quizmodule.scss page---*/
+.install-overlay {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: $blog-main;
+  z-index: 2000;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.section-flex-logo {
+  width: 100px;
+  margin: auto;
+}
+
+.section-flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.btn-close-install {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: $secondary-text-medium;
+  background-color: #000;
+  border: 1px solid #000;
+  outline: none;
+  margin-left: -18px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3-8 */
+  transform: rotate(45deg);
+  .btn-basic:hover {
+    border: 1px solid transparent;
+    outline: none !important;
+  }
+  .btn-basic:focus {
+    border: 1px solid transparent;
+    outline: 0px auto -webkit-focus-ring-color !important;
+  }
+}
+
+.btn-rounded-install {
+  height: 100%;
+  width: 80px;
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: $secondary-text-medium;
+  background-color: $blog-main;
+  border: none;
+  outline: none;
+  margin-left: 0px;
+  .btn-basic:hover {
+    border: none;
+    outline: none !important;
+  }
+  .btn-basic:focus {
+    border: none;
+    outline: 0px auto -webkit-focus-ring-color !important;
+  }
+}
+
+.uk-button-default {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.spinner-center {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-f-c {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-f-l {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+}
+.d-f-c-b {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.d-f-b {
+  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.timegrid-axis-background {
+  background-color: $blog-main;
+  color: #fff;
+}
+
+.fc .fc-timegrid-axis-frame {
+  background-color: #fff;
+  color:#000;
+}
+.fc .fc-daygrid-day-number,.fc-daygrid-dot-event .fc-event-title {
+  color:#000;
+}
+
+.fc-event-title {
+  color:#000;
+  height: 20px;
+  width:auto;
+  overflow:hidden;
+}
+
+.fc-event .fc-event-main {
+   width:auto; 
+  //min-height: 50px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.fc-daygrid-event {
+white-space: normal!important;
+}
+/*---for calendar---*/
+.step-tabs-sel {
+  border-bottom: 3px solid $blog-main;
+  font-family: $secondary-text-bold;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600 !important;
+  color: $sec-brand;
+  cursor: pointer;
+  height: 35px;
+}
+.step-tabs {
+  border-bottom: 1px solid $lightgrey;
+  font-family: $secondary-text;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300 !important;
+  color: $lightgrey;
+  cursor: pointer;
+  height: 35px;
+}
+
+.no-content-message {
+  font-family: $secondary-text;
+  font-size:16px;
+}
+
+@media (max-width: 900px) {
+  .layout-full {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: auto !important;
+    overflow: hidden;
+    //padding: 0px 0px 30px 0px !important;
+  }
+
+  #CommonPageHolder {
+    height: calc(100vh - 54px) !important;
+    width: 100vw !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 0px 50px 0px;
+    margin: auto;
+  }
+
+  #CommonPageHolder-teachers {
+    height: calc(100% - 54px) !important;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+    padding: 0px;
+    margin: auto;
+  }
+
+  #CommonPageHolder-rank {
+    height: calc(100% - 54px) !important;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+    padding: 0px;
+    margin: auto;
+  }
+
+  #quiz-bg {
+    // min-height: calc(100vh - 60px);
+    height: calc(100vh - 52px) !important;
+    width: 100vw !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    padding: 0px 0px 30px 0px !important;
+    margin: 0px;
+
+  }
+
+}

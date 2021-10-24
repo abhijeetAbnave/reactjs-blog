@@ -1,0 +1,427 @@
+.ant-table-thead>tr>th {
+    font-family: $secondary-text-bold;
+    color: #000 !important;
+    background-color: paleturquoise !important;
+}
+
+.ant-table-thead{
+    border-radius: 10px 0px;
+}
+.text-value {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.info-text {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    border-radius: $border-radius !important;
+}
+
+.header-card {
+    border-radius: 0px 0px $border-radius $border-radius;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #f5f7fb;
+    margin-bottom: 20px;
+
+}
+
+.card-shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.dropdown-toggle:after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.custom-tab {
+    border: 0.5px solid #ccc !important;
+    border-radius:5px !important;
+    min-width: 5px;
+    text-align: center;
+    background-color:#fff!important;
+    margin: 8px;
+    color:rgb(34, 34, 34);
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    &:hover {
+        border: 0.5px solid #ccc !important;
+        background-color:$gray-600!important;
+        color:#000;
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
+}
+
+
+// Here you can add other styles
+ul.diamond_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.diamond_img li {
+    display: inline-block;
+    margin: 0 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+ul.diamond_img li img {
+    width: 50px;
+}
+ul.diamond_img li:first-child span {
+    top: 35%;
+    // text-shadow: -2px 2px 1px #000000a6;
+    // color: #fff;
+}
+ul.diamond_img span {
+    // position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // text-shadow: -2px 2px 1px #000000a6;
+    // color: #fff;
+}
+
+li.certificate_icon img {
+    width: 45px !important;
+    margin-left: 5px;
+}
+
+.min-h {
+    min-height: 337px;
+}
+
+.icon-knowledge-wealth {
+    // background: url('../img/coin1.png');
+    background: url('../images/coin-diamond.png');
+    height: 36px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-overall-accuracy {
+    background: url('../images/coin-diamond.png');
+    height: 36px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.icon-students {
+    // background: url('../img/coin1.png');
+    background: url('../images/coin-diamond.png');
+    height: 36px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.icon-knowledge-currency {
+    background: url('../images/coins.png');
+    height: 42px;
+    width: 40px;
+    display: block;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+.icon-learning-currency {
+    background: url('../images/coins-silver.png');
+    height: 42px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.info-icon {
+    font-size: 22px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.filterdropdown .btn.btn-secondary, .filterdropdown .btn.btn-secondary:hover, .filterdropdown .btn.btn-secondary:focus {
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+}
+
+.header-fixed .app-header {
+    position: fixed;
+    z-index: 100 !important;
+    width: 100%;
+}
+
+.tab-content {
+    //background-color: #fff;
+    //border:1px solid;
+    border-color: #fff #e6ebf5 #e6ebf5 #e6ebf5;
+}
+
+
+.circle-icon-size {
+    font-size: 44px;
+    position: absolute;
+    left: -10px;
+    top: -6px;
+} 
+
+.info-cards-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info-card {
+    background-color: transparent;
+    margin:0px 8px;
+    width:350px;
+}
+.info-card-bg-main{
+    background-color:$color-blue!important;
+    color:#fff!important;
+}
+.info-card-bg-all{
+    background-color:$color-default!important;
+    color:#fff!important;
+}
+
+.student-profile-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 0px 10px;
+}
+.student-profile-item-flex {
+    margin: 10px;
+    padding:20px;
+    border:1px dotted $lightgrey;
+   
+}
+
+// .student-profile-item-flex:last-child {
+//     margin: 15px 20px;
+//     padding: 0px 30px 0px 0px;
+//     border-right:none;
+   
+// }
+.student-profile-label {
+    font-size: 12px;
+   
+    color:$grey;
+    width:100%;
+    border-bottom: 0.5px solid $lightgrey;
+    line-height: 20px;
+}
+.student-profile-value {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.chapter-detail-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    background-color:#fff;
+    margin: 10px auto;
+    border-bottom: 0.5px solid $lightgrey;
+    padding-bottom:10px;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+
+.chapter-detail-flex-item {
+   margin:5px; 
+   min-width:200px;
+   flex:3;
+   min-height: 30px;
+}
+
+ .chapter-detail-flex-item-5 {
+    margin:5px; 
+    width: 100%;
+    min-height: 30px;
+ }
+ 
+
+
+.custom-card-stu-count {
+    width: 150px;  
+    padding: 10px 5px;
+    background-color:#648dff;
+    border-radius: 10px;
+    border-radius:10px 0px 0px 10px;
+    position: absolute;
+    z-index: 900;
+    right: 12px;
+    color:#fff;
+    border-right:3px solid $pri-brand;
+}
+
+.student-count-custom {
+    font-size: 30px;
+    line-height: auto;
+}
+
+.detail-value {
+   font-family: $secondary-text;
+    font-size: 16px!important;
+    font-weight:600;    
+}
+
+.detail-number {
+    font-family: $secondary-text-bold;
+     font-size: 26px!important;
+     font-weight:600;    
+ }
+
+.detail-label{
+    font-size:12px;
+}
+
+.detail-date{
+    font-size:11px;
+    color:$pri-brand;
+    font-weight: normal;
+
+}
+
+.info-icon-pos{
+    position: absolute;
+    font-size:30px;
+    right:-4px;
+    top:-4px;
+    color:#fff;
+
+}
+
+.subject-analysis-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0px;
+}
+.subject-analysis-flex-item {
+    margin: 10px;
+    padding:30px!important;
+    border:1px dotted $lightgrey;
+   
+}
+
+.subject-analysis-label {
+    font-size:14px;   
+    color:#fff;
+    width:100%;
+    border-bottom: 0.5px solid #fff;
+    line-height: 30px;
+}
+
+.sub-badge{
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 0px 10px;
+}
+.subject-analysis-value {
+    font-size: 26px;
+    line-height: 50px;
+}
+
+/*----cards for -subjectdetail-students summary ----*/
+.stu-sum-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.stu-sum-flex-card {
+    background-color: transparent;
+    margin:0px 8px;
+    width:350px;
+}
+
+.stu-sum-flex-bg-all{
+    background-color:$color-default!important;
+    color:#fff!important;
+    padding: 20px;
+    margin: 5px 20px;
+}
+.stu-sum {
+  font-size: 40px;
+  text-align:center;
+}
+.thumb{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.dash-card-success{
+    background-color: $success;
+    padding:10px;
+    font-size:14px;
+    color:#fff;
+    flex:1;
+    border-radius: $border-radius;
+    margin:10px;
+}
+
+.dash-card-fail{
+    background-color: $fail;
+    padding:10px;
+    font-size:14px;
+    color:#fff;
+    flex:1;
+    border-radius: $border-radius;
+    margin:10px;
+}
+
+.chart-wrapper{
+    width:100%;
+}
+
+
+
+
+
+

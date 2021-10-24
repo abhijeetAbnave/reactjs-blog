@@ -1,0 +1,114 @@
+/*   for new profile  subject cards */
+
+#profile-content {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+.profilesubjectCard {
+  background-color: #fff;
+  border-radius: $border-radius;
+  padding: 5px;
+  margin: 15px auto;
+  cursor: pointer;
+  // border:2px solid #fff;
+}
+
+.profile-subject-details-flex {
+  border-radius: $border-radius;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.profile-item-flex {
+  width: 100px;
+  text-align: center;
+}
+
+.progress-topic-text {
+  font-family: $secondary-text;
+  font-size: 14px;
+  line-height: 10px;
+  text-align: center;
+  .h2 {
+    color: #fff;
+    font-weight: 400 !important;
+  }
+}
+
+.progress-topic-text-h2 {
+  color: #fff;
+  font-weight: 400 !important;
+}
+
+.profile-percentage {
+  font-family: $primary-title-text;
+  font-size: 35px;
+  color: #000;
+  text-align: left;
+  width: 100%;
+}
+
+.panel-heading {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $lightgrey;
+  margin-bottom: 20px;
+}
+
+.profile-subtitle {
+  font-family: $secondary-text-medium;
+  font-size: 15px;
+  font-weight: 600;
+  color:#000;
+}
+
+.avatar-item-flex {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.avatar-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.select-label-avatar {
+  height: 50px;
+  width: 50px;
+  display: block;
+  //background: #57add0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  opacity: 1;
+  font-size: 26px;
+  font-family: "blog-secondary-regular", sans-serif;
+  border: 3px solid $lightgrey;
+  padding: 0px;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: url("../images/check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 20px;
+  z-index: 999;
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  border: 3px solid transparent;
+}

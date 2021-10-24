@@ -1,0 +1,7 @@
+.ant-message {
+    z-index: 100000!important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
