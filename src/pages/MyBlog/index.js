@@ -17,7 +17,7 @@ import imageCompression from "browser-image-compression";
 import camera from "../../assets/images/camera.png";
 
 const configS3 = {
-  bucketName: "summarizer-abhijeet",
+  bucketName: "reactjs-blog",
   region: "ap-south-1",
   accessKeyId: "****R",
   secretAccessKey: "HXiO3NfsCABZkUoCe8VST5N4Aych7nhZRe0rIh6Q",
@@ -198,8 +198,30 @@ function Home() {
             <Grid container>
               <Grid item xs={12}>
                 <div className="m-auto loginCard ">
+                <div className="form-group">
+                    <button
+                      type="button"
+                      className="card-button"
+                      id
+                      onClick={showTextClick}
+                      disabled={false}
+                    >
+                        Add Blog
+                    </button>
+                  </div>
                   <div className="card-blog">
-                    <h2>TITLE HEADING</h2>
+                    <div className="row">
+                        <div className="col-10">
+                        <h2>TITLE HEADING</h2>
+                        </div>
+                        <div className="col-2">
+                        <i className="icon-delete "></i>
+                    <span className="nav-Text">Delete</span>
+                        </div>
+                        
+                    </div>
+                    
+                    
                     <h5>Title description, Dec 7, 2017</h5>
                     <div className="fakeimg" style={{ height: '200px' }}>Image</div>
                     <p>Some text..</p>

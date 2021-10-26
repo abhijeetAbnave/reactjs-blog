@@ -250,7 +250,7 @@ class Login extends React.Component {
 
   componentDidMount() {
     localStorage.setItem("user_type", "student");
-    //this.getUserProfile();
+    this.getUserProfile();
   }
 
   render() {

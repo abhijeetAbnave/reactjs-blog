@@ -8390,17 +8390,17 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
 }
 
 .unified-theme-light .logo-dark {
-  background-image: url("../images/logo/logo-Icon-light.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 80%;
   background-position: center;
   margin: auto;
 }
 
 .unified-theme-light .loader-logo {
-  background-image: url("../images/logo/logo-dark.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   width: 100px;
   height: 54px;
   background-repeat: no-repeat;
@@ -8477,17 +8477,17 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
 }
 
 .unified-theme-dark .logo-dark {
-  background-image: url("../images/logo/logo-Icon-dark.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 80%;
   background-position: center;
   margin: auto;
 }
 
 .unified-theme-dark .loader-logo {
-  background-image: url("../images/logo/logo-light.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   width: 100px;
   height: 54px;
   background-repeat: no-repeat;
@@ -9355,7 +9355,7 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
 .chapter-height {
   width: 450px;
   height: 131px;
-  background-image: url("../images/logo/logo-dark.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 50%;
@@ -9385,7 +9385,7 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  background-image: url("../images/logo/logo-dark.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   background-repeat: no-repeat;
   background-color: #fff;
   background-size: 50%;
@@ -10422,7 +10422,7 @@ i {
 }
 
 .feed-chapter-cell {
-  background-image: url("../images/logo/logo-dark.svg");
+  background-image: url("../images/logo/logo-icon-light.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;

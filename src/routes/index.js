@@ -4,6 +4,7 @@ import Login from "../pages/Onboarding";
 // lazy load all the views
 const Home = React.lazy(() => import("../pages/Home/index"));
 const Profile = React.lazy(() => import("../pages/Profile/index"));
+const Blogs = React.lazy(() => import("../pages/MyBlog/index"));
 
 const authProtectedRoutes = [
   {
@@ -14,6 +15,13 @@ const authProtectedRoutes = [
   {
     path: "/profile",
     component: Profile,
+    meta: {
+      auth: true,
+    },
+  },
+  {
+    path: "/blogs",
+    component: Blogs,
     meta: {
       auth: true,
     },

@@ -23,7 +23,7 @@ import { clearUiStates } from "../../reducers/ui-states/actions";
 import { setActiveTab } from "../../actions/layout";
 
 //Import Images
-import logo from "../../assets/images/logo/logo-Icon-light.svg";
+import logo from "../../assets/images/logo/logo-icon-light.png";
 import { Fragment } from "react";
 import Emitter from "../../services/EventEmitter";
 import { isSafari } from "react-device-detect";
@@ -116,20 +116,36 @@ function LeftSidebarMenu(props) {
   const getNav = () => {
     return (
       <React.Fragment>
-        <NavItem id="past">
+        <NavItem id="home">
           <NavLink
             id="pills-user-tab"
-            className={classnames({ active: activeTab === "/past" })}
+            className={classnames({ active: activeTab === "/home" })}
             onClick={() => {
-              toggleTab("past");
+              toggleTab("home");
+            }}
+          >
+            <i className="icon-search-1 "></i>
+            <span className="nav-Text">Home</span>
+          </NavLink>
+        </NavItem>
+        <UncontrolledTooltip target="home" placement="top">
+          Home
+        </UncontrolledTooltip>
+
+        <NavItem id="blogs">
+          <NavLink
+            id="pills-user-tab"
+            className={classnames({ active: activeTab === "/blogs" })}
+            onClick={() => {
+              toggleTab("blogs");
             }}
           >
             <i className="icon-learn "></i>
-            <span className="nav-Text">Past Data</span>
+            <span className="nav-Text">My Blogs</span>
           </NavLink>
         </NavItem>
-        <UncontrolledTooltip target="past" placement="top">
-          Past Data
+        <UncontrolledTooltip target="blogs" placement="top">
+          My Blogs
         </UncontrolledTooltip>
 
         <NavItem id="profile">
@@ -140,7 +156,7 @@ function LeftSidebarMenu(props) {
               toggleTab("profile");
             }}
           >
-            <i className="icon-profile-2 "></i>
+            <i className="icon-profile-1 "></i>
             <span className="nav-Text">Profile</span>
           </NavLink>
         </NavItem>
@@ -217,7 +233,7 @@ function LeftSidebarMenu(props) {
                     className="logo logo-dark"
                   >
                     <span className="logo-sm">
-                      <img src={logo} alt="logo" height="40" width="40" />
+                      <img src={logo} alt="logo" height="70" width="70" />
                     </span>
                   </Link>
                 </div>

@@ -19,7 +19,7 @@ import { getUserProfileData } from "../../services/dataServices/userProfileServi
 const configS3 = {
   bucketName: "summarizer-abhijeet",
   region: "ap-south-1",
-  accessKeyId: "AKIA6LHZT3DEOGOJ6ONR",
+  accessKeyId: "****R",
   secretAccessKey: "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",
 };
 
