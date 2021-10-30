@@ -1,9 +1,14 @@
 {
-    "apiEndPoint": "https://fd0a9c1209ad.ngrok.io",
+    "apiEndPoint": "http://localhost:8080",
     "tokenHmacKey": "12345",
-    "predict": "summary",
-    "authenticate": "verify",
-    "register": "users",
+    "authenticate": "login",
+    "register": "register",
+    "getAllBlogs": "get-all-blogs",
+    "getMyBlogs": "get-blogs",
+    "addBlog": "post-blog",
+    "updateBlog": "put-blog",
+    "deleteBlog": "delete-blog",
+    "approveBlog": "approve-blog",
     "theme": "dark",
-    "jwtSecretKey": "THIS_IS_SECRET_KEY!@"
+    "jwtSecretKey": "thisisblogisawesome"
 }
