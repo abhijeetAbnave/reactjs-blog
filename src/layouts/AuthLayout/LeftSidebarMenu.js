@@ -212,7 +212,7 @@ function LeftSidebarMenu(props) {
         {/* LOGO */}
         <div className="navbar-brand-box">
           <Link
-            to={user.user_type === "student" ? "/concepts" : "/"}
+            to={user.user_type === "blogger" ? "/home" : "/"}
             className="logo logo-dark"
           ></Link>
         </div>
@@ -229,7 +229,7 @@ function LeftSidebarMenu(props) {
                   style={{ paddingTop: "3px" }}
                 >
                   <Link
-                    to={user.user_type === "student" ? "/concepts" : "/"}
+                    to={user.user_type === "blogger" ? "/home" : "/"}
                     className="logo logo-dark"
                   >
                     <span className="logo-sm">

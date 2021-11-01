@@ -19,12 +19,6 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { saveUserDataToLocalStorage } from "../../services/dataServices/userProfileService";
 
-window.boardList = [];
-window.languageList = [];
-window.activatedGradesObject = [];
-window.activatedGradesList = [];
-window.profileData = [];
-
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -97,10 +91,11 @@ class Login extends React.Component {
         "Content-Type": "application/json",
       };
       const payload = {
+        first_name: this.state.firstName,
+        last_name: this.state.lastName,
         email: this.state.registerEmail,
         password: this.state.registerPassword,
-        username: this.state.registerUsername,
-        age: 23
+        role: "blogger"
       };
       api
         .post(`${pwaConfig.apiEndPoint}/${pwaConfig.register}`, payload, {
@@ -176,8 +171,8 @@ class Login extends React.Component {
         .then((data) => {
           let validationResponse = data;
           if (validationResponse) {
-            if (validationResponse.status) {
-              this.getUserProfile(validationResponse.user);
+            if (validationResponse.token) {
+              this.getUserProfile(validationResponse);
               this.setState({
                 varifySpinner: false,
               });
@@ -207,8 +202,9 @@ class Login extends React.Component {
   };
 
   getUserProfile = async (userProfileData) => {
-    saveUserDataToLocalStorage(userProfileData);
-    this.props.login({ user: userProfileData });
+    await saveUserDataToLocalStorage(userProfileData);
+    // this.props.setAuthToken({ token: userProfileData.token });
+    await this.props.login({ user: userProfileData });
     this.props.history.replace("/home");
   };
 
@@ -228,10 +224,6 @@ class Login extends React.Component {
     }
   };
 
-  apiCall = async () => {
-    this.props.history.replace("/home");
-  };
-
   maxLengthValidation = (object) => {
     if (object.target.value.length > object.target.maxLength) {
       showWarningMessage("Max length reached");
@@ -249,8 +241,8 @@ class Login extends React.Component {
   };
 
   componentDidMount() {
-    localStorage.setItem("user_type", "student");
-    this.getUserProfile();
+    // localStorage.setItem("user_type", "blogger");
+    // this.getUserProfile();
   }
 
   render() {
@@ -261,7 +253,7 @@ class Login extends React.Component {
             <div id="content">
               <div
                 className="col-md-12 no-gutters"
-                // id="onboarding-content-card "
+              // id="onboarding-content-card "
               >
                 <div className="width-100">
                   <div className="m-auto loginCard ">
@@ -461,7 +453,10 @@ class Login extends React.Component {
   }
 }
 
-const mapDispatchToProps = { login };
+const mapDispatchToProps = {
+  login,
+  setAuthToken
+};
 
 const mapStateToProps = () => ({});
 

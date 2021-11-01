@@ -7,12 +7,12 @@ const routeGuard = async (props) => {
     isAllowed: true,
     newLocation: "/",
   };
-  
+
   const state = store.getState();
   // console.log("state in route guard ------->", state.config);
 
 
-  const isLoggedIn = 1 || state.user && state.user?.id ? true : false;
+  const isLoggedIn = state.auth?.isAuthenticated && state.auth?.token !== null && (state.user && state.user?._id ? true : false);
 
   // console.log("props.meta", props.meta.public);
   if (props.meta.public) return next;

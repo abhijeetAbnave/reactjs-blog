@@ -142,7 +142,7 @@ const Nav = (props) => {
   };
 
   // const getNav = () => {
-  //   if (user.user_type === "student") {
+  //   if (user.user_type === "blogger") {
   //     return (
   //       <React.Fragment>
   //         {!isInstalled && isLaunchedInBrowser && isDeferred && (
@@ -214,7 +214,7 @@ const Nav = (props) => {
   //         </div>
   //       </React.Fragment>
   //     );
-  //   } else if (user.user_type === "teacher") {
+  //   } else if (user.user_type === "admin") {
   //     return (
   //       <React.Fragment>
   //         <div
