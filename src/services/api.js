@@ -52,6 +52,16 @@ const service = {
     const api = createAxios();
     return api.post(route, payload, options);
   },
+  put(route, payload = {}, options = {}) {
+    // Initialise Axios
+    const api = createAxios();
+    return api.put(route, payload, options);
+  },
+  delete(route, payload = {}, options = {}) {
+    // Initialise Axios
+    const api = createAxios();
+    return api.delete(route,  { data: payload }, options);
+  },
   postQs(route, query = {}, payload = {}, options = {}) {
     return api.post(`${route}?${stringify(query)}`, payload, options);
   },

@@ -16,13 +16,6 @@ import imageCompression from "browser-image-compression";
 import camera from "../../assets/images/camera.png";
 import { getUserProfileData } from "../../services/dataServices/userProfileService"
 
-const configS3 = {
-  bucketName: "summarizer-abhijeet",
-  region: "ap-south-1",
-  accessKeyId: "****R",
-  secretAccessKey: "HXiO3NfsCABZkUoCe8VST5N4Aych7nhZRe0rIh6Q",
-};
-
 
 function Profile() {
     const [id, setId] = useState("")
@@ -30,8 +23,8 @@ function Profile() {
   const [email, setemail] = useState("")
 
   getUserProfileData().then(data => {
-    setId(data.id)
-    setUserName(data.username);
+    setId(data._id)
+    setUserName(data.first_name + " " + data.last_name);
     setemail(data.email)
 })
   return (

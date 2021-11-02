@@ -8707,6 +8707,59 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
   outline: 0px auto -webkit-focus-ring-color !important;
 }
 
+.btn-edit-install {
+  height: 100%;
+  width: 70px;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "blog-secondary-medium", sans-serif;
+  background-color: #64ffa6;
+  border: none;
+  outline: none;
+  margin-left: 0px;
+}
+
+.btn-edit-install .btn-basic:hover {
+  border: none;
+  outline: none !important;
+}
+
+.btn-edit-install .btn-basic:focus {
+  border: none;
+  outline: 0px auto -webkit-focus-ring-color !important;
+}
+
+.btn-delete-install {
+  height: 100%;
+  width: 70px;
+  font-size: 20px;
+  line-height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "blog-secondary-medium", sans-serif;
+  background-color: #ff6f64;
+  border: none;
+  outline: none;
+  margin-left: 0px;
+}
+
+.btn-delete-install:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-delete-install .btn-basic:hover {
+  border: none;
+  outline: none !important;
+}
+
+.btn-delete-install .btn-basic:focus {
+  border: none;
+  outline: 0px auto -webkit-focus-ring-color !important;
+}
+
 .uk-button-default {
   background-color: #fff !important;
   color: #000 !important;
@@ -11884,7 +11937,7 @@ label.checkbox {
 }
 
 .card-button {
-  background-color: #648dff;
+  background-color: #16326c;
   border-radius: 50px;
   width: 100%;
   -webkit-box-shadow: none;
