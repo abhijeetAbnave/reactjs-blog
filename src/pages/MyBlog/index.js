@@ -29,6 +29,7 @@ import {
   showNoInternetAlert,
   showWarningMessage,
 } from "../../services/utility";
+import moment from "moment"
 
 const options = {
   maxSizeMB: 1,
@@ -59,6 +60,7 @@ function MyBlog(props) {
   const classes = useStyles();
   const [verifySpinner, setverifySpinner] = useState(true);
   const [showEditModule, setShowEditModule] = useState(false);
+  const [newBlog, setNewBlog] = useState(false);
   const [blogsData, setBlogsData] = useState([]);
   const userStates = store.getState();
   const [editBlogState, setEditBlog] = useState({
@@ -98,6 +100,7 @@ function MyBlog(props) {
             } else {
               showWarningMessage("No Blogs are there");
               setverifySpinner(false);
+              setBlogsData(data);
             }
           } else {
             showWarningMessage("No Response from API, Try again");
@@ -126,9 +129,9 @@ function MyBlog(props) {
       const headers = {
         "Content-Type": "application/json",
       };
-      const payload = {};
+      const payload = editBlogState;
       api
-        .getApi(`${pwaConfig.apiEndPoint}/${pwaConfig.getMyBlogs}`, payload, {
+        .put(`${pwaConfig.apiEndPoint}/${pwaConfig.updateBlog}`, payload, {
           headers: headers,
         })
         .then((data) => {
@@ -139,6 +142,7 @@ function MyBlog(props) {
             } else {
               showWarningMessage("No Blogs are there");
               setverifySpinner(false);
+              setBlogsData(data);
             }
           } else {
             showWarningMessage("No Response from API, Try again");
@@ -150,6 +154,66 @@ function MyBlog(props) {
     } catch (error) {
       console.log("Error Response from API", error);
     }
+    setNewBlog(false);
+    setEditBlog({
+      blog_name: "",
+      blog_subtitle: "",
+      blog_content: "",
+      blog_owner_name: "",
+      blog_owner_id: "",
+      blog_read_time: "5 minutes",
+      blog_comments: "none"
+    });
+  }
+
+  const addBlog = () => {
+    try {
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      let ownerDetails = {
+        blog_owner_id: userStates.user._id,
+        blog_owner_name: userStates.user.first_name
+      }
+      const payload = {
+        ...editBlogState,
+        ...ownerDetails
+      };
+
+      api
+        .post(`${pwaConfig.apiEndPoint}/${pwaConfig.addBlog}`, payload, {
+          headers: headers,
+        })
+        .then((data) => {
+          if (data) {
+            if (data.length !== 0) {
+              setverifySpinner(false);
+              setBlogsData(data);
+            } else {
+              showWarningMessage("No Blogs are there");
+              setverifySpinner(false);
+              setBlogsData(data);
+            }
+          } else {
+            showWarningMessage("No Response from API, Try again");
+            console.log("No Response from API");
+            setverifySpinner(false);
+            props.history.push("/login");
+          }
+        });
+    } catch (error) {
+      console.log("Error Response from API", error);
+    }
+    setNewBlog(false);
+    setEditBlog({
+      blog_name: "",
+      blog_subtitle: "",
+      blog_content: "",
+      blog_owner_name: "",
+      blog_owner_id: "",
+      blog_read_time: "5 minutes",
+      blog_comments: "none"
+    });
   }
 
   const publishBlog = (id, approved) => {
@@ -173,6 +237,7 @@ function MyBlog(props) {
             } else {
               showWarningMessage("No Blogs are there");
               setverifySpinner(false);
+              setBlogsData(data);
             }
           } else {
             showWarningMessage("No Response from API, Try again");
@@ -206,6 +271,7 @@ function MyBlog(props) {
             } else {
               showWarningMessage("No Blogs are there");
               setverifySpinner(false);
+              setBlogsData(data);
             }
           } else {
             showWarningMessage("No Response from API, Try again");
@@ -330,22 +396,23 @@ function MyBlog(props) {
           <Button
             variant="outline-secondary"
             onClick={() => {
-              // handleClose();
+              setShowEditModule(false);
             }}
             className="modal-button btn btn-outline"
           >
             {" "}
-            {"No"}
+            {"Cancel"}
           </Button>
           <Button
             variant="primary"
             onClick={() => {
-              // onLogoutClick();
+              newBlog ? addBlog() : editBlog();
+              setShowEditModule(false);
             }}
             className="modal-button  btn btn-primary"
           >
             {" "}
-            {"Yes"}
+            {newBlog ? "Add" : "Update"}
           </Button>
         </ModalFooter>
       </Modal>
@@ -365,7 +432,10 @@ function MyBlog(props) {
                       type="button"
                       className="card-button"
                       id
-                      // onClick={showTextClick}
+                      onClick={() => {
+                        setNewBlog(true);
+                        setShowEditModule(!showEditModule);
+                      }}
                       disabled={false}
                     >
                       Add Blog
@@ -405,7 +475,7 @@ function MyBlog(props) {
 
                         </div>
 
-                        <h5>{blog.blog_subtitle}, {blog.blog_created_timestamp}</h5>
+                        <h5>{blog.blog_subtitle}, {moment(blog.blog_created_timestamp).format("MMM Do, YYYY")}</h5>
                         <div className="fakeimg" style={{ height: '200px' }}>Image</div>
                         <p>{blog.blog_content}</p>
                         <div className="form-group">
@@ -416,7 +486,7 @@ function MyBlog(props) {
                             onClick={() => publishBlog(blog._id, blog.blog_approved)}
                             disabled={!(userStates.user.role === Roles.admin)}
                           >
-                            {blog.blog_approved ? "Published" : "Unpublished"}
+                            {blog.blog_approved ? "Published" : "Publish"}
                           </button>
                         </div>
                       </div>

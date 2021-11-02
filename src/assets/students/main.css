@@ -8432,7 +8432,8 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
 .unified-theme-dark h1,
 .unified-theme-dark h2,
 .unified-theme-dark .bread-crumb, .unified-theme-dark .page-header, .unified-theme-dark .leader-num-text, .unified-theme-dark .no-content-message, .unified-theme-dark .quiz-title-text, .unified-theme-dark .rail-title {
-  color: #F3F6F8;
+  color: #010016;
+  text-transform: capitalize;
 }
 
 .unified-theme-dark h5, .unified-theme-dark h3, .unified-theme-dark h4, .unified-theme-dark h6, .unified-theme-dark .ReportCard, .unified-theme-dark .leaderboard-small-title {
@@ -8440,8 +8441,8 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
 }
 
 .unified-theme-dark .layout-full {
-  background-color: #43c6ac;
-  background-image: #43c6ac;    
+  background-color: #648dff;
+  background-image: #648dff;    
   }
 
 .unified-theme-dark .rail-title {
@@ -8513,7 +8514,7 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
   margin: auto !important;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: scroll !important;
 }
 
 .side-menu {

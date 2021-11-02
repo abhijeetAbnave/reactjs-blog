@@ -9,6 +9,7 @@
     "updateBlog": "put-blog",
     "deleteBlog": "delete-blog",
     "approveBlog": "approve-blog",
+    "getUsers": "get-users",
     "theme": "dark",
     "jwtSecretKey": "thisisblogisawesome"
 }

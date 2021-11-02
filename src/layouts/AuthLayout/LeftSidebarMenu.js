@@ -171,8 +171,8 @@ function LeftSidebarMenu(props) {
     if (user?.first_name) {
       return (
         <div className="btn-group dropup profile-user-dropdown dropdown nav-item nav-circle">
-          {user.first_name?.substr(0, 1)}
-          {user.last_name?.substr(0, 1)}
+          {user.first_name?.substr(0, 1).toUpperCase()}
+          {user.last_name?.substr(0, 1).toUpperCase()}
         </div>
       );
     } else {

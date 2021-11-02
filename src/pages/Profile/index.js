@@ -1,69 +1,196 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { withRouter, Link } from "react-router-dom";
 import { Spinner } from "reactstrap";
 import { connect } from "react-redux";
 import store from "../../store/store";
 import Body from "../../elements/Body";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import { IconButton } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import PhotoCameraRoundedIcon from "@material-ui/icons/PhotoCameraRounded";
 import api from "../../services/api";
 import pwaConfig from "../../pwaConfig.json";
-import S3FileUpload from "react-s3";
-import imageCompression from "browser-image-compression";
-import camera from "../../assets/images/camera.png";
-import { getUserProfileData } from "../../services/dataServices/userProfileService"
+import { getUserProfileData } from "../../services/dataServices/userProfileService";
+import Roles from "../../roles.json";
+import {
+  showSuccessMessage,
+  showNoInternetAlert,
+  showWarningMessage,
+} from "../../services/utility";
+import Grid from "@material-ui/core/Grid";
 
+function Profile(props) {
+  const [usersData, setUsersData] = useState([]);
+  const [verifySpinner, setverifySpinner] = useState(false);
+  const reduxStates = store.getState();
 
-function Profile() {
-    const [id, setId] = useState("")
-  const [username, setUserName] = useState("");
-  const [email, setemail] = useState("")
+  const { first_name, last_name, email, deleted, role } = reduxStates.user;
 
-  getUserProfileData().then(data => {
-    setId(data._id)
-    setUserName(data.first_name + " " + data.last_name);
-    setemail(data.email)
-})
+  useEffect(() => {
+    if (role === Roles.admin) getAllUsers();
+  }, []);
+
+  const getAllUsers = () => {
+    try {
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      const payload = {};
+      api
+        .getApi(`${pwaConfig.apiEndPoint}/${pwaConfig.getUsers}`, payload, {
+          headers: headers,
+        })
+        .then((data) => {
+          if (data) {
+            if (data.length !== 0) {
+              setverifySpinner(false);
+              setUsersData(data);
+            } else {
+              showWarningMessage("No Blogs are there");
+              setverifySpinner(false);
+              setUsersData(data);
+            }
+          } else {
+            showWarningMessage("No Response from API, Try again");
+            console.log("No Response from API");
+            setverifySpinner(false);
+            props.history.push("/login");
+          }
+        });
+    } catch (error) {
+      console.log("Error Response from API", error);
+    }
+  };
+
   return (
     <Body
       component={
         <Fragment key={"FeedRails"}>
-          <div className="row no-gutters my-auto">
-            <div className="cardtitle text-center text-white">
-              Your Profile Data
-            </div>
-          </div>
-          <div className="row my-2 ">
-            <div className="col-sm-7 mx-auto">
-              <div className="width-100 ">
-              <div className="m-auto loginCard ">
-                <Fragment>
-                  {" "}
-                  <div>
-                  <div className="input-group-1 form-group ">
-                      <h6>
-                          {username}
-                      </h6>
-                    </div>
-                    <div className="input-group-1 form-group ">
-                      <h6>
-                          {id}
-                      </h6>
-                    </div>
-                    <div className="input-group-1 form-group ">
-                    <h6>
-                          {email}
-                      </h6>
-                    </div>
-                    
+          <div className={"overflow-class"}>
+            <Grid container>
+              <Grid item xs={12}>
+                <div className="row no-gutters my-auto">
+                  <div className="cardtitle text-center text-white">
+                    {role === Roles.admin ? "Users Data" : "Your Profile Data"}
                   </div>
-                </Fragment>
-              </div>
-              </div>
-            </div>
+                </div>
+                <div className="row my-2 ">
+                  <div className="col-sm-7 mx-auto">
+                    <div className="width-100 ">
+                      <div className="m-auto loginCard ">
+                        <Fragment>
+                          {" "}
+                          {role === Roles.admin ? (
+                            usersData.map((user, index) => {
+                              return (
+                                <div key={index} className="card-blog">
+                                  <div className="row">
+                                    <div className="col-9 ">
+                                      <div className="row">
+                                        <div className="col-4 ">
+                                          <h4>First Name: </h4>
+                                        </div>
+                                        <div className="col-8">
+                                          <h4>{user.first_name}</h4>
+                                        </div>
+                                      </div>
+                                      <div className="row">
+                                        <div className="col-4 ">
+                                          <h4>Last Name: </h4>
+                                        </div>
+                                        <div className="col-8">
+                                          <h4>{user.last_name}</h4>
+                                        </div>
+                                      </div>
+                                      <div className="row">
+                                        <div className="col-4 ">
+                                          <h4>Email: </h4>
+                                        </div>
+                                        <div className="col-8">
+                                          <h4>{user.email}</h4>
+                                        </div>
+                                      </div>
+                                      <div className="row">
+                                        <div className="col-4 ">
+                                          <h4>Role: </h4>
+                                        </div>
+                                        <div className="col-8">
+                                          <h4>{user.role}</h4>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div className="col-3">
+                                      <button
+                                        class="btn-delete-install"
+                                        id="button"
+                                        style={{ height: 40 }}
+                                        disabled={deleted}
+                                        // onClick={() => deleteBlog(blog._id)}
+                                      >
+                                        <i className="icon-delete "></i>
+                                      </button>
+                                      {/* <span className="nav-Text">Delete</span> */}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <div className="card-blog">
+                              <div className="row">
+                                <div className="col-9 ">
+                                  <div className="row">
+                                    <div className="col-4 ">
+                                      <h4>First Name: </h4>
+                                    </div>
+                                    <div className="col-8">
+                                      <h4>{first_name}</h4>
+                                    </div>
+                                  </div>
+                                  <div className="row">
+                                    <div className="col-4 ">
+                                      <h4>Last Name: </h4>
+                                    </div>
+                                    <div className="col-8">
+                                      <h4>{last_name}</h4>
+                                    </div>
+                                  </div>
+                                  <div className="row">
+                                    <div className="col-4 ">
+                                      <h4>Email: </h4>
+                                    </div>
+                                    <div className="col-8">
+                                      <h4>{email}</h4>
+                                    </div>
+                                  </div>
+                                  <div className="row">
+                                    <div className="col-4 ">
+                                      <h4>Role: </h4>
+                                    </div>
+                                    <div className="col-8">
+                                      <h4>{role}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-3">
+                                  <button
+                                    class="btn-delete-install"
+                                    id="button"
+                                    style={{ height: 40 }}
+                                    disabled={deleted}
+                                    // onClick={() => deleteBlog(blog._id)}
+                                  >
+                                    <i className="icon-delete "></i>
+                                  </button>
+                                  {/* <span className="nav-Text">Delete</span> */}
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </Fragment>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
           </div>
         </Fragment>
       }
