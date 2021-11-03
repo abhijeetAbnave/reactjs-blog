@@ -31,12 +31,6 @@ import {
 } from "../../services/utility";
 import moment from "moment"
 
-const options = {
-  maxSizeMB: 1,
-  maxWidthOrHeight: 1920,
-  useWebWorker: true,
-};
-
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100%",

@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
 import api from "../../services/api";
+import moment from "moment"
 
 import pwaConfig from "../../pwaConfig.json";
 
@@ -15,19 +16,6 @@ import {
   showNoInternetAlert,
   showWarningMessage,
 } from "../../services/utility";
-
-
-const config = {
-  lang: "eng",
-  oem: 1,
-  psm: 3,
-};
-
-const options = {
-  maxSizeMB: 1,
-  maxWidthOrHeight: 1920,
-  useWebWorker: true,
-};
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -101,7 +89,7 @@ function Home(props) {
                     return (
                       <div key={index} className="card-blog">
                         <h2>{blog.blog_name}</h2>
-                        <h5>{blog.blog_subtitle}, {blog.blog_created_timestamp}</h5>
+                        <h5>{blog.blog_subtitle}, {moment(blog.blog_created_timestamp).format("MMM Do, YYYY")}</h5>
                         <div className="fakeimg" style={{ height: '200px' }}>Image</div>
                         <p>{blog.blog_content}</p>
                       </div>

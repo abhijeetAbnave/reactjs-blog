@@ -44,7 +44,6 @@ class Login extends React.Component {
       registerPassword: "",
       registerLoader: false,
     };
-    window.UserName = this.state.rawPhone;
     this.handleSubmit = this.handleSubmit.bind(this);
 
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
@@ -102,7 +101,7 @@ class Login extends React.Component {
         last_name: this.state.registerLastname,
         email: this.state.registerEmail,
         password: this.state.registerPassword,
-        role: "blogger"
+        role: "blogger",
       };
       api
         .post(`${pwaConfig.apiEndPoint}/${pwaConfig.register}`, payload, {
@@ -122,7 +121,7 @@ class Login extends React.Component {
                 registerEmail: "",
                 register: false,
                 enteredCode: "",
-                password: ""
+                password: "",
               });
             } else {
               showWarningMessage(validationResponse.message + ", Try again");
@@ -263,7 +262,7 @@ class Login extends React.Component {
             <div id="content">
               <div
                 className="col-md-12 no-gutters"
-              // id="onboarding-content-card "
+                // id="onboarding-content-card "
               >
                 <div className="width-100">
                   <div className="m-auto loginCard ">
@@ -311,12 +310,14 @@ class Login extends React.Component {
                                     </button>
                                     {/* <input type="submit" className="card-button-join" placeholder="Join"> */}
                                   </div>
-                                  {!this.state.isJoinedClicked && <div
-                                    className="cardtitle text-center text-white uk-link"
-                                    onClick={this.onRegisterClick}
-                                  >
-                                    Register
-                                  </div>}
+                                  {!this.state.isJoinedClicked && (
+                                    <div
+                                      className="cardtitle text-center text-white uk-link"
+                                      onClick={this.onRegisterClick}
+                                    >
+                                      Register
+                                    </div>
+                                  )}
                                 </div>
                               </Fragment>
                             </div>
@@ -477,7 +478,7 @@ class Login extends React.Component {
 
 const mapDispatchToProps = {
   login,
-  setAuthToken
+  setAuthToken,
 };
 
 const mapStateToProps = () => ({});
