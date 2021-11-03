@@ -8916,7 +8916,7 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
+  margin-right: 0px !important;
   margin-left: -15px;
 }
 
@@ -13482,7 +13482,7 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -15px;
+    margin-right: 0px !important;
     margin-left: -15px;
   }
   .card-deck .card {

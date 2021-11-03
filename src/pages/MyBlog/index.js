@@ -447,7 +447,7 @@ function MyBlog(props) {
                         <div className="row">
                           <div className="col-2">
                             <button
-                              class="btn-edit-install"
+                              className="btn-edit-install"
                               id="button"
                               onClick={() => {
                                 setShowEditModule(!showEditModule);
@@ -463,7 +463,7 @@ function MyBlog(props) {
                           </div>
                           <div className="col-2">
                             <button
-                              class="btn-delete-install"
+                              className="btn-delete-install"
                               id="button"
                               disabled={blog.deleted}
                               onClick={() => deleteBlog(blog._id)}

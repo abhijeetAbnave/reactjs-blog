@@ -27,7 +27,7 @@ class NonAuth extends PureComponent {
         let currentage = this.capitalizeFirstLetter(
           this.props.location.pathname
         );
-        document.title = currentage + " | Blog - Gamified learning";
+        document.title = currentage + " | Blog - Abhijeet";
         this.setState({ showChildren: true });
       } else {
         window.location.replace(result.newLocation);

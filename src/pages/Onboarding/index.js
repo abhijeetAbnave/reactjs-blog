@@ -39,7 +39,8 @@ class Login extends React.Component {
       isJoinedClicked: false,
       register: false,
       registerEmail: "",
-      registerUsername: "",
+      registerFirstname: "",
+      registerLastname: "",
       registerPassword: "",
       registerLoader: false,
     };
@@ -67,9 +68,15 @@ class Login extends React.Component {
     });
   };
 
-  handleRegisterUsername = (event) => {
+  handleRegisterFirstname = (event) => {
     this.setState({
-      registerUsername: event.target.value,
+      registerFirstname: event.target.value,
+    });
+  };
+
+  handleRegisterLastname = (event) => {
+    this.setState({
+      registerLastname: event.target.value,
     });
   };
 
@@ -91,8 +98,8 @@ class Login extends React.Component {
         "Content-Type": "application/json",
       };
       const payload = {
-        first_name: this.state.firstName,
-        last_name: this.state.lastName,
+        first_name: this.state.registerFirstname,
+        last_name: this.state.registerLastname,
         email: this.state.registerEmail,
         password: this.state.registerPassword,
         role: "blogger"
@@ -102,15 +109,16 @@ class Login extends React.Component {
           headers: headers,
         })
         .then((data) => {
-          debugger;
           let validationResponse = data;
           if (validationResponse) {
-            if (validationResponse.status) {
+            if (validationResponse.token) {
               showSuccessMessage("Registration Successful, Login Again");
+              this.getUserProfile(validationResponse);
               this.setState({
                 registerPassword: "",
                 registerLoader: false,
-                registerUsername: "",
+                registerFirstname: "",
+                registerLastname: "",
                 registerEmail: "",
                 register: false,
                 enteredCode: "",
@@ -121,7 +129,8 @@ class Login extends React.Component {
               this.setState({
                 registerPassword: "",
                 registerLoader: false,
-                registerUsername: "",
+                registerFirstname: "",
+                registerLastname: "",
                 registerEmail: "",
                 register: true,
               });
@@ -132,7 +141,8 @@ class Login extends React.Component {
             this.setState({
               registerPassword: "",
               registerLoader: false,
-              registerUsername: "",
+              registerFirstname: "",
+              registerLastname: "",
               registerEmail: "",
               register: true,
             });
@@ -295,6 +305,7 @@ class Login extends React.Component {
                                       type="button"
                                       className="card-button-join"
                                       onClick={this.joinClicked}
+                                      disabled={this.state.isJoinedClicked}
                                     >
                                       Join
                                     </button>
@@ -386,13 +397,24 @@ class Login extends React.Component {
                                     </div>
                                     <div className="input-group-1 form-group ">
                                       <input
-                                        id="re-username"
+                                        id="re-firstname"
                                         type="text"
                                         maxLength={50}
                                         onInput={this.maxLengthValidation}
                                         className="input-with-button"
-                                        placeholder="Please enter username"
-                                        onChange={this.handleRegisterUsername}
+                                        placeholder="Please enter First name"
+                                        onChange={this.handleRegisterFirstname}
+                                      />{" "}
+                                    </div>
+                                    <div className="input-group-1 form-group ">
+                                      <input
+                                        id="re-lastname"
+                                        type="text"
+                                        maxLength={50}
+                                        onInput={this.maxLengthValidation}
+                                        className="input-with-button"
+                                        placeholder="Please enter Last name"
+                                        onChange={this.handleRegisterLastname}
                                       />{" "}
                                     </div>
                                     <div className="input-group-1 form-group">

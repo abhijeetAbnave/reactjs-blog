@@ -2884,7 +2884,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-container-item-padding-remove-right {
-  margin-right: -15px;
+  margin-right: 0px !important;
 }
 
 /* Phone landscape and bigger */
@@ -6377,11 +6377,11 @@ ul.uk-nav-sub {
      */
 .uk-navbar-container > .uk-container .uk-navbar-left {
   margin-left: -15px;
-  margin-right: -15px;
+  margin-right: 0px !important;
 }
 
 .uk-navbar-container > .uk-container .uk-navbar-right {
-  margin-right: -15px;
+  margin-right: 0px !important;
 }
 
 /*

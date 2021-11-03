@@ -59,6 +59,38 @@ function Profile(props) {
     }
   };
 
+  const deleteUser = (payload) => {
+    try {
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      api
+        .delete(`${pwaConfig.apiEndPoint}/${pwaConfig.deleteUser}`, payload, {
+          headers: headers,
+        })
+        .then((data) => {
+          if (data) {
+            if (data.length !== 0) {
+              setverifySpinner(false);
+              setUsersData(data);
+            } else {
+              showWarningMessage("No Blogs are there");
+              setverifySpinner(false);
+              setUsersData(data);
+            }
+          } else {
+            showWarningMessage("No Response from API, Try again");
+            console.log("No Response from API");
+            setverifySpinner(false);
+            props.history.push("/login");
+          }
+        });
+    } catch (error) {
+      console.log("Error Response from API", error);
+    }
+  }
+
+
   return (
     <Body
       component={
@@ -118,11 +150,26 @@ function Profile(props) {
                                     </div>
                                     <div className="col-3">
                                       <button
-                                        class="btn-delete-install"
+                                        className="btn-edit-install"
                                         id="button"
                                         style={{ height: 40 }}
-                                        disabled={deleted}
-                                        // onClick={() => deleteBlog(blog._id)}
+                                        disabled={!(user.deleted)}
+                                        onClick={() => deleteUser({
+                                          _id: user._id,
+                                          deleted: false
+                                        })}
+                                      >
+                                        <i className="icon-edit "></i>
+                                      </button>
+                                      <button
+                                        className="btn-delete-install"
+                                        id="button"
+                                        style={{ height: 40 }}
+                                        disabled={user.deleted}
+                                        onClick={() => deleteUser({
+                                          _id: user._id,
+                                          deleted: true
+                                        })}
                                       >
                                         <i className="icon-delete "></i>
                                       </button>
@@ -171,11 +218,11 @@ function Profile(props) {
                                 </div>
                                 <div className="col-3">
                                   <button
-                                    class="btn-delete-install"
+                                    className="btn-delete-install"
                                     id="button"
                                     style={{ height: 40 }}
-                                    disabled={deleted}
-                                    // onClick={() => deleteBlog(blog._id)}
+                                    disabled={true}
+                                    // onClick={() => deleteUser(user._id)}
                                   >
                                     <i className="icon-delete "></i>
                                   </button>

@@ -3,7 +3,7 @@ import { message, notification } from "antd";
 
 message.config({
   top: 70,
-  duration: 2,
+  duration: 0.5,
   maxCount: 3,
   rtl: true,
 });
@@ -26,6 +26,6 @@ export const showErrorMessage = (msg, duration = 5) => {
   return message.error(msg, duration);
 };
 
-export const showWarningMessage = (msg, duration = 3) => {
+export const showWarningMessage = (msg, duration = 0.5) => {
   return message.warning(msg, duration);
 };

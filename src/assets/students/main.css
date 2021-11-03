@@ -8720,7 +8720,14 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
   border: none;
   outline: none;
   margin-left: 0px;
+  margin-top: 10px;
 }
+
+.btn-edit-install:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 
 .btn-edit-install .btn-basic:hover {
   border: none;
@@ -8744,6 +8751,7 @@ input[type="checkbox"]:checked + .challenge-theme-bg-default {
   border: none;
   outline: none;
   margin-left: 0px;
+  margin-top: 10px;
 }
 
 .btn-delete-install:disabled {
@@ -12039,6 +12047,11 @@ label.checkbox {
   float: left;
   text-align: center;
   margin: auto;
+}
+
+.card-button-join:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .time {
