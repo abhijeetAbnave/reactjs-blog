@@ -11,7 +11,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.12-apline as prod
+FROM nginx:1.12-alpine as prod
 
 COPY --from=build /code/build /usr/share/nginx/html
 
